@@ -1,0 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Open Sans', 'Roboto Condensed', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  user-select: none;
+
+  color: #000;
+  transition: 0.2s;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+header {
+  z-index: 100;
+}
+section {
+  z-index: 50;
+}
+footer {
+  z-index: 50;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+
+  @media (max-width: $mediaLaptops) {
+    max-width: 965px;
+  }
+  @media (max-width: $mediaSmallDesktops) {
+    max-width: 650px;
+  }
+  @media (max-width: $mediaTablets) {
+    max-width: 625px;
+  }
+  @media (max-width: $mediaSmallTablets) {
+    max-width: 400px;
+  }
+  @media (max-width: $mediaPhones) {
+    max-width: 350px;
+  }
+  @media (max-width: $mediaSmallPhones) {
+    max-width: 260px;
+  }
+}
+
+.columns {
+  position: relative;
+  padding: 0 20px;
+
+  @media (max-width: $mediaPhones) {
+    padding: 0 5px;
+  }
+}
