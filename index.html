@@ -16,7 +16,7 @@
     <header class="header">
       <div class="header__container wrapper-min">
         <div class="header__links">
-          <div class="logo">
+          <div class="logo header__logo">
             <a href="https://www.ispring.ru/" target="_blank" rel="noopener">
               <img
                 src="assets/icons/iSpring-logo.png"
@@ -24,33 +24,35 @@
                 class="logo__img"
             /></a>
           </div>
-          <nav class="header__menu">
+          <nav class="header-menu">
             <ul class="menu-list">
               <li class="menu-list__item">
-                <select class="menu-list-select" name="products" id="products">
-                  <option
-                    class="menu-list-select__item"
-                    value="default"
-                    selected
+                <label for="products">
+                  <select
+                    class="menu-list-select"
+                    name="products"
+                    id="products"
                   >
-                    <a href="/" class="menu-list__link">Products</a>
-                  </option>
-                  <option class="menu-list-select__item" value="product-1">
-                    <a href="/" class="menu-list__link">Some link</a>
-                  </option>
-                  <option class="menu-list-select__item" value="product-2">
-                    <a href="/" class="menu-list__link">Some link</a>
-                  </option>
-                  <option class="menu-list-select__item" value="product-3">
-                    <a href="/" class="menu-list__link">Some link</a>
-                  </option>
-                  <option class="menu-list-select__item" value="product-4">
-                    <a href="/" class="menu-list__link">Some link</a>
-                  </option>
-                  <option class="menu-list-select__item" value="product-2">
-                    <a href="/" class="menu-list__link">Some link</a>
-                  </option>
-                </select>
+                    <option value="default" selected>
+                      <a href="/" class="menu-list__link">Products</a>
+                    </option>
+                    <option value="product-1">
+                      <a href="/" class="menu-list__link">Some link</a>
+                    </option>
+                    <option value="product-2">
+                      <a href="/" class="menu-list__link">Some link</a>
+                    </option>
+                    <option value="product-3">
+                      <a href="/" class="menu-list__link">Some link</a>
+                    </option>
+                    <option value="product-4">
+                      <a href="/" class="menu-list__link">Some link</a>
+                    </option>
+                    <option value="product-2">
+                      <a href="/" class="menu-list__link">Some link</a>
+                    </option>
+                  </select>
+                </label>
               </li>
               <li class="menu-list__item">
                 <a href="/" class="menu-list__link">Pricing</a>
@@ -70,27 +72,31 @@
             </ul>
           </nav>
         </div>
-        <div class="header__options options">
-          <select
-            id="lang-select"
-            class="options-select"
-            name="products"
-            id="products"
-          >
-            <option class="options-select__item" value="default" selected>
-              <a href="/" class="options-select__link">en</a>
-            </option>
-            <option class="options-select__item" value="product-1">
-              <a href="/" class="options-select__link">ru</a>
-            </option>
-          </select>
-          <div id="basket" class="options__basket">
+        <div class="header__options header-options">
+          <label for="options" class="options-wrapper">
+            <select
+              id="lang-select"
+              class="options-select"
+              name="products"
+              id="options"
+            >
+              <option value="default" selected>
+                <a href="/" class="options-select__link">en</a>
+              </option>
+              <option value="product-1">
+                <a href="/" class="options-select__link">ru</a>
+              </option>
+            </select>
+          </label>
+          <div id="basket" class="header-options__basket options-wrapper">
             <img src="assets/icons/salary-basket.svg" alt="salary basket" />
           </div>
-          <div id="search" class="options__search">
+          <div id="search" class="header-options__search options-wrapper">
             <img src="assets/icons/search.svg" alt="search" />
           </div>
-          <button id="log-in" class="options__log-in">Log in</button>
+          <button id="log-in" class="header-options__log-in options-wrapper">
+            Log in
+          </button>
         </div>
       </div>
     </header>

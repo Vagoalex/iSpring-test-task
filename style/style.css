@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/euclid-circular-b?styles=100047,100046,100049");
 html,
 body,
 div,
@@ -482,16 +482,16 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Roboto Condensed", "Roboto", sans-serif;
+  font-family: "Montserrat", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 24px;
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
   color: #000;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 ::-webkit-scrollbar {
@@ -522,4 +522,70 @@ footer {
 .wrapper-min {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #dde0e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 15px;
+  line-height: 22px;
+}
+.header__container {
+  display: flex;
+  height: 74px;
+  justify-content: space-between;
+}
+.header__logo {
+  margin-right: 26px;
+}
+.header__links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-menu .menu-list {
+  display: flex;
+  align-items: center;
+}
+.header-menu .menu-list__item {
+  margin-right: 27px;
+}
+.header-menu .menu-list__item:first-child {
+  margin-right: 19px;
+}
+.header-menu .menu-list__item:last-child {
+  margin-right: 0;
+}
+.header-menu__select-label {
+  position: relative;
+}
+.header-menu .menu-list-select {
+  border: none;
+  background-color: transparent;
+}
+
+.header-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-options .options-wrapper {
+  margin-right: 15px;
+}
+.header-options .options-wrapper:last-child {
+  margin-right: 0px;
+}
+.header-options .options-select {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.header-options__log-in {
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */

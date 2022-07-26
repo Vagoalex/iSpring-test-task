@@ -4,17 +4,17 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Open Sans', 'Roboto Condensed', 'Roboto', sans-serif;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 24px;
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
 
   color: #000;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 ::-webkit-scrollbar {
   width: 0;
