@@ -13,7 +13,87 @@
     <title>iSpring test task</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__container wrapper-min">
+        <div class="header__links">
+          <div class="logo">
+            <a href="https://www.ispring.ru/" target="_blank" rel="noopener">
+              <img
+                src="assets/icons/iSpring-logo.png"
+                alt="iSpring logo"
+                class="logo__img"
+            /></a>
+          </div>
+          <nav class="header__menu">
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <select class="menu-list-select" name="products" id="products">
+                  <option
+                    class="menu-list-select__item"
+                    value="default"
+                    selected
+                  >
+                    <a href="/" class="menu-list__link">Products</a>
+                  </option>
+                  <option class="menu-list-select__item" value="product-1">
+                    <a href="/" class="menu-list__link">Some link</a>
+                  </option>
+                  <option class="menu-list-select__item" value="product-2">
+                    <a href="/" class="menu-list__link">Some link</a>
+                  </option>
+                  <option class="menu-list-select__item" value="product-3">
+                    <a href="/" class="menu-list__link">Some link</a>
+                  </option>
+                  <option class="menu-list-select__item" value="product-4">
+                    <a href="/" class="menu-list__link">Some link</a>
+                  </option>
+                  <option class="menu-list-select__item" value="product-2">
+                    <a href="/" class="menu-list__link">Some link</a>
+                  </option>
+                </select>
+              </li>
+              <li class="menu-list__item">
+                <a href="/" class="menu-list__link">Pricing</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="/" class="menu-list__link">Support</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="/" class="menu-list__link">Customers</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="/" class="menu-list__link">Company</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="/" class="menu-list__link">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__options options">
+          <select
+            id="lang-select"
+            class="options-select"
+            name="products"
+            id="products"
+          >
+            <option class="options-select__item" value="default" selected>
+              <a href="/" class="options-select__link">en</a>
+            </option>
+            <option class="options-select__item" value="product-1">
+              <a href="/" class="options-select__link">ru</a>
+            </option>
+          </select>
+          <div id="basket" class="options__basket">
+            <img src="assets/icons/salary-basket.svg" alt="salary basket" />
+          </div>
+          <div id="search" class="options__search">
+            <img src="assets/icons/search.svg" alt="search" />
+          </div>
+          <button id="log-in" class="options__log-in">Log in</button>
+        </div>
+      </div>
+    </header>
     <main class="main"></main>
     <footer class="footer"></footer>
 

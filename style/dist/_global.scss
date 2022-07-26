@@ -1,3 +1,5 @@
+@import '../options/variables';
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,7 +12,6 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
-  user-select: none;
 
   color: #000;
   transition: 0.2s;
@@ -32,35 +33,49 @@ footer {
   display: none;
 }
 
-.wrapper {
+.wrapper-max {
   max-width: 1020px;
   margin: 0 auto;
 
-  @media (max-width: $mediaLaptops) {
-    max-width: 965px;
-  }
-  @media (max-width: $mediaSmallDesktops) {
-    max-width: 650px;
-  }
-  @media (max-width: $mediaTablets) {
-    max-width: 625px;
-  }
-  @media (max-width: $mediaSmallTablets) {
-    max-width: 400px;
-  }
-  @media (max-width: $mediaPhones) {
-    max-width: 350px;
-  }
-  @media (max-width: $mediaSmallPhones) {
-    max-width: 260px;
-  }
+  // @media (max-width: $mediaLaptops) {
+  //   max-width: 965px;
+  // }
+  // @media (max-width: $mediaSmallDesktops) {
+  //   max-width: 650px;
+  // }
+  // @media (max-width: $mediaTablets) {
+  //   max-width: 625px;
+  // }
+  // @media (max-width: $mediaSmallTablets) {
+  //   max-width: 400px;
+  // }
+  // @media (max-width: $mediaPhones) {
+  //   max-width: 350px;
+  // }
+  // @media (max-width: $mediaSmallPhones) {
+  //   max-width: 260px;
+  // }
 }
+.wrapper-min {
+  max-width: 1000px;
+  margin: 0 auto;
 
-.columns {
-  position: relative;
-  padding: 0 20px;
-
-  @media (max-width: $mediaPhones) {
-    padding: 0 5px;
-  }
+  // @media (max-width: $mediaLaptops) {
+  //   max-width: 965px;
+  // }
+  // @media (max-width: $mediaSmallDesktops) {
+  //   max-width: 650px;
+  // }
+  // @media (max-width: $mediaTablets) {
+  //   max-width: 625px;
+  // }
+  // @media (max-width: $mediaSmallTablets) {
+  //   max-width: 400px;
+  // }
+  // @media (max-width: $mediaPhones) {
+  //   max-width: 350px;
+  // }
+  // @media (max-width: $mediaSmallPhones) {
+  //   max-width: 260px;
+  // }
 }
