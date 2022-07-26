@@ -1,3 +1,4 @@
 26.07.2022 18:40 // init: inited this project
 26.07.2022 19:36 // feat: completed HTML structure for header
-26.07.2022 20:48 // feat: completed header
+26.07.2022 20:48 // feat: completed desktop header section
+26.07.2022 23:41 // 2.5 hours had a rest // feat: completed desktop hero section
