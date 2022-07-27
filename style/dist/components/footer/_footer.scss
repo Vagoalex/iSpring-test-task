@@ -1,0 +1,79 @@
+.footer {
+  padding: 100px 0px 84px 0px;
+  &__container {
+    font-size: 14px;
+    line-height: 26px;
+    color: $main-text;
+
+    display: flex;
+  }
+}
+
+.footer-copyright {
+  flex: 50%;
+  margin-left: 6px;
+  &__logo {
+    margin-bottom: 15px;
+  }
+  &__text {
+    max-width: 375px;
+  }
+}
+.logo {
+  &__img {
+  }
+}
+.footer-subscribtion {
+  flex: 50%;
+  position: relative;
+  left: 41px;
+  padding: 0px 41px 0px 0px;
+  &__title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 31px;
+    margin-bottom: 8px;
+  }
+  &__desk {
+    margin-bottom: 16px;
+  }
+}
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+
+  &__input {
+    height: 38px;
+    width: 303px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 26px;
+    transition: all 0.5s ease;
+    border: 1px solid #c3c4ca;
+    border-radius: 3px;
+
+    &::placeholder {
+      color: #8c929b;
+      transition: all 0.5s ease;
+    }
+    &:focus {
+      border: 1px solid $main-color;
+      box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.7);
+      border-radius: 4px;
+      &::placeholder {
+        color: $main-color;
+      }
+    }
+  }
+  &__btn {
+    margin-left: 9px;
+    padding: 6px 0px;
+    background: $main-color;
+    border-radius: 3px;
+    color: $alternate-text;
+    border: none;
+    width: 144px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}

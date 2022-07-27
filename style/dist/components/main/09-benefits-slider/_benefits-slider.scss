@@ -1,0 +1,125 @@
+.benefits-slider {
+  padding: 150px 0px 0px 0px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+    color: $headline-color;
+    max-width: 645px;
+    &--first {
+      margin-left: -13px;
+    }
+  }
+}
+
+.slider {
+  margin-top: 59px;
+  position: relative;
+}
+.slider-buttons {
+  user-select: none;
+  .slider-btn {
+    background: $alternate-text;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    top: 43%;
+    cursor: pointer;
+    &--next {
+      right: -25px;
+    }
+    &--prev {
+      left: -25px;
+    }
+  }
+}
+.slider-wrapper {
+  overflow: hidden;
+  border-radius: 30px;
+}
+.slider-inner {
+}
+.slide {
+  height: 352px;
+  display: flex;
+  background-color: $min-section-color;
+}
+
+.slide-introduction {
+  flex: 50%;
+  padding: 92px 20px 108px 96px;
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: $headline-color;
+  }
+}
+.slide-content {
+  flex: 50%;
+  color: $main-text;
+  padding: 94px 95px 66px 55px;
+
+  &__desk {
+    max-width: 350px;
+  }
+}
+.person {
+  display: flex;
+  margin-top: 21px;
+  &__img {
+    width: 48px;
+    height: 48px;
+  }
+  .person-info {
+    padding: 3px 0px 0px 17px;
+    &__name {
+      font-family: 'Euclid Circular B';
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__desk {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.carousel-dots {
+  margin-top: 33px;
+  .carousel-indicators {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    &__dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-right: 7px;
+      margin-left: 7px;
+      cursor: pointer;
+      background-color: $main-color;
+      opacity: 0.5;
+      transition: opacity 0.6s ease;
+    }
+  }
+}
