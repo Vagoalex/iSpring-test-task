@@ -6,3 +6,4 @@
 27.07.2022 12:48 // feat: completed desktop benefits section
 27.07.2022 14:40 // feat: completed jump-start desktop section
 27.07.2022 16:30 // feat: completed promote, manage-sales, product-languages and questions desktop sections
+28.07.2022 0:19 // completed: completed desktop layout. ToDo: hovers, actives, crossbrowsers, adaptive, logic in forms, burger menu and modal window. php server and postgreSQL
