@@ -4,4 +4,5 @@
 26.07.2022 23:41 // 2.5 hours had a rest // feat: completed desktop hero section
 27.07.2022 11:25 // feat: completed desktop clients section
 27.07.2022 12:48 // feat: completed desktop benefits section
-27.07.2022 14:40 // feat: completed sump-start desktop section
+27.07.2022 14:40 // feat: completed jump-start desktop section
+27.07.2022 16:30 // feat: completed promote, manage-sales, product-languages and questions desktop sections
