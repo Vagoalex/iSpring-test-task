@@ -15,7 +15,7 @@
     &--item {
       background-color: $main-color;
       display: inline-block;
-      color: #ffffff;
+      color: $alternate-text;
     }
   }
   &__cards {

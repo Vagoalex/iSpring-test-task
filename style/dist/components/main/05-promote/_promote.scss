@@ -1,0 +1,71 @@
+.promote {
+  padding: 150px 0px 0px 0px;
+  &__container {
+    display: grid;
+    grid-template-columns: 489px 489px;
+    grid-gap: 22px;
+  }
+}
+
+.promote-card {
+  border-radius: 30px;
+  width: 489px;
+  height: 291px;
+}
+.promote-main-card {
+  background-color: $main-color;
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+    padding: 73px 95px 80px 64px;
+    color: $alternate-text;
+  }
+}
+.promote-info-card {
+  background-color: $min-section-color;
+  padding: 0px 81px 55px 65px;
+  &--licenses {
+    padding: 0px 81px 55px 62px;
+  }
+
+  &__capture {
+    position: relative;
+    height: 35px;
+    margin-top: 30px;
+
+    &--licenses {
+      position: absolute;
+      top: 0%;
+      left: 1%;
+    }
+    &--aids {
+      position: absolute;
+      top: 6%;
+      left: 0%;
+    }
+    &--co-activities {
+      position: absolute;
+      top: 15%;
+      left: 0%;
+    }
+  }
+  &__title {
+    color: $headline-color;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 25px;
+    &--licenses {
+      margin-top: 11px;
+    }
+  }
+  &__desk {
+    margin-top: 12px;
+    max-width: 330px;
+
+    &--licenses {
+      max-width: 350px;
+    }
+  }
+}

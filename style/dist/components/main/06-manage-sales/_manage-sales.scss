@@ -1,0 +1,31 @@
+.manage-sales {
+  padding: 150px 0px 0px 0px;
+  &__container {
+    padding: 0px 20px 0px 25px;
+    display: flex;
+  }
+  &__graphic {
+  }
+  &__content {
+    padding: 0px 75px 0px 49px;
+  }
+}
+
+.sales {
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+    color: $headline-color;
+  }
+  &__desk {
+    margin-top: 32px;
+  }
+  .sales-link {
+    margin-top: 51px;
+    &__item {
+      background-color: $main-color;
+      color: $alternate-text;
+    }
+  }
+}
