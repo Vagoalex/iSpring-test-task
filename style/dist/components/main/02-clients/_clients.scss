@@ -1,0 +1,94 @@
+.clients {
+  padding: 155px 0 0 0;
+  &__container {
+    display: flex;
+  }
+}
+
+.cli-content {
+  flex: 50%;
+  &__title {
+    max-width: 350px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+    margin: 0 0 21px 0;
+
+    color: $headline-color;
+  }
+  &__desk {
+    max-width: 380px;
+    margin-bottom: 49px;
+  }
+  &__team {
+  }
+}
+.clients-design {
+  flex: 50%;
+  position: relative;
+  color: #ffffff;
+
+  .clients-design-wrapper {
+    position: absolute;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__clients {
+    width: 332px;
+    height: 136px;
+    top: 1.5%;
+    left: 13%;
+    background-color: $max-section-color;
+  }
+  &__years {
+    height: 126px;
+    width: 295px;
+    top: 32.5%;
+    left: 35.5%;
+    background-color: $addition-color;
+    z-index: 1;
+  }
+  &__customers {
+    width: 503px;
+    height: 166px;
+    bottom: -5%;
+    left: 7%;
+    background-color: $main-color;
+  }
+
+  .cli-design {
+    text-align: left;
+
+    // Костыль ниже))
+    &__title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 46px;
+    }
+    &__title--clients {
+    }
+    &__title--years {
+      margin: 3px 0px 0px -3px;
+    }
+    &__title--customers {
+      margin: 15px 0px 0px -10px;
+    }
+    &__desk {
+      font-size: 16px;
+      line-height: 24px;
+      display: inline-block;
+    }
+    &__desk--clients {
+    }
+    &__desk--years {
+      margin: 0px 0px 0px -2px;
+    }
+    &__desk--customers {
+      margin: 5px 0px 0px -15px;
+    }
+  }
+}

@@ -1,7 +1,15 @@
 // media queries for this project
-$mediaLaptops: 1200px;
-$mediaSmallDesktops: 991px;
-$mediaTablets: 768px;
-$mediaSmallTablets: 650px;
-$mediaPhones: 420px;
-$mediaSmallPhones: 350px;
+$media-laptops: 1200px;
+$media-small-desktops: 991px;
+$media-tablets: 768px;
+$media-small-tablets: 650px;
+$media-phones: 420px;
+$media-small-phones: 350px;
+
+// colors
+$headline-color: #151824;
+$max-wrap-button-color: #ffc960;
+$main-color: #3d50f9;
+$max-section-color: #2c3442;
+$min-section-color: #fff3e1;
+$addition-color: #ff7449;

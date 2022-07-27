@@ -514,6 +514,16 @@ footer {
   display: none;
 }
 
+.link-button {
+  display: inline-block;
+  padding: 18px 37px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
 .wrapper-max {
   max-width: 1200px;
   margin: 0 auto;
@@ -626,14 +636,7 @@ footer {
   margin-bottom: 55px;
 }
 .hero__container .hero-content__link {
-  display: inline-block;
-  padding: 18px 37px;
   background: #ffc960;
-  border-radius: 100px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
   color: #151824;
 }
 .hero__container .hero-background {
@@ -652,4 +655,88 @@ footer {
   position: absolute;
   right: 18.5%;
   top: 14.5%;
+}
+
+.clients {
+  padding: 155px 0 0 0;
+}
+.clients__container {
+  display: flex;
+}
+
+.cli-content {
+  flex: 50%;
+}
+.cli-content__title {
+  max-width: 350px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 46px;
+  margin: 0 0 21px 0;
+  color: #151824;
+}
+.cli-content__desk {
+  max-width: 380px;
+  margin-bottom: 49px;
+}
+.clients-design {
+  flex: 50%;
+  position: relative;
+  color: #ffffff;
+}
+.clients-design .clients-design-wrapper {
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clients-design__clients {
+  width: 332px;
+  height: 136px;
+  top: 1.5%;
+  left: 13%;
+  background-color: #2c3442;
+}
+.clients-design__years {
+  height: 126px;
+  width: 295px;
+  top: 32.5%;
+  left: 35.5%;
+  background-color: #ff7449;
+  z-index: 1;
+}
+.clients-design__customers {
+  width: 503px;
+  height: 166px;
+  bottom: -5%;
+  left: 7%;
+  background-color: #3d50f9;
+}
+.clients-design .cli-design {
+  text-align: left;
+}
+.clients-design .cli-design__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 46px;
+}
+.clients-design .cli-design__title--years {
+  margin: 3px 0px 0px -3px;
+}
+.clients-design .cli-design__title--customers {
+  margin: 15px 0px 0px -10px;
+}
+.clients-design .cli-design__desk {
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+}
+.clients-design .cli-design__desk--years {
+  margin: 0px 0px 0px -2px;
+}
+.clients-design .cli-design__desk--customers {
+  margin: 5px 0px 0px -15px;
 }/*# sourceMappingURL=style.css.map */

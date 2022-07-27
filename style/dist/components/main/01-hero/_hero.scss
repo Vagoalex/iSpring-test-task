@@ -5,7 +5,7 @@
     display: flex;
     height: 588px;
     width: 100%;
-    background: #3d50f9;
+    background: $main-color;
     border-radius: 30px;
 
     .hero-content {
@@ -34,15 +34,8 @@
         margin-bottom: 55px;
       }
       &__link {
-        display: inline-block;
-        padding: 18px 37px;
-        background: #ffc960;
-        border-radius: 100px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        color: #151824;
+        background: $max-wrap-button-color;
+        color: $headline-color;
       }
     }
     .hero-background {
