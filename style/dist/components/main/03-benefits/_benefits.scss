@@ -1,0 +1,91 @@
+.benefits {
+  padding: 192px 0 0 0;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  &__link {
+    margin-top: 72px;
+    &--item {
+      background-color: $main-color;
+      display: inline-block;
+      color: #ffffff;
+    }
+  }
+  &__cards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.benefits-card {
+  padding: 39px 46px 51px 39px;
+  background-color: $min-section-color;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  height: auto;
+  text-align: left;
+
+  &--offering {
+    padding: 39px 35px 51px 36px;
+  }
+
+  &__capture {
+    position: relative;
+    height: 70px;
+    &--bonuses {
+      position: absolute;
+      top: 0%;
+      left: -1%;
+    }
+    &--support {
+      position: absolute;
+      top: -10%;
+      left: 0%;
+    }
+    &--support-before {
+      position: absolute;
+      top: 4%;
+      left: 0;
+    }
+    &--offering {
+      position: absolute;
+      top: -10%;
+      left: -1%;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: $headline-color;
+    margin-top: 35px;
+  }
+  &__desk {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 19px;
+
+    &--bonuses {
+      max-width: 222px;
+    }
+    &--support {
+      max-width: 240px;
+    }
+    &--offering {
+      max-width: 255px;
+    }
+  }
+}
