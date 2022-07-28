@@ -1,5 +1,5 @@
 .header {
-  background: #fff;
+  background: $alternate-text;
   border-bottom: 1px solid #dde0e5;
   position: fixed;
   top: 0;
@@ -11,9 +11,17 @@
   line-height: 22px;
 
   &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
     height: 74px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+
+    @include crossBrowser(transition, all 0.4s ease);
   }
 
   &__logo {
@@ -21,8 +29,16 @@
   }
 
   &__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -31,7 +47,12 @@
 }
 .header-menu {
   .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     &__item {
@@ -44,6 +65,10 @@
       }
     }
     &__link {
+      @include crossBrowser(transition, all 0.4s ease);
+      &:hover {
+        color: $addition-color;
+      }
     }
   }
 
@@ -52,19 +77,37 @@
   }
 
   .menu-list-select {
+    cursor: pointer;
     border: none;
     background-color: transparent;
+
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      color: $addition-color;
+    }
   }
 }
 
 .logo {
   &__img {
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      @include crossBrowser(transform, scale(1.15));
+    }
   }
 }
 
 .header-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   .options-wrapper {
@@ -79,16 +122,36 @@
     border: none;
     background-color: transparent;
     text-transform: uppercase;
+    cursor: pointer;
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      color: $addition-color;
+    }
 
     &__link {
     }
   }
   &__basket {
+    cursor: pointer;
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      @include crossBrowser(transform, scale(1.2));
+    }
   }
   &__search {
+    cursor: pointer;
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      @include crossBrowser(transform, scale(1.2));
+    }
   }
   &__log-in {
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      color: $addition-color;
+    }
   }
 }

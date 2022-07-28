@@ -1,19 +1,38 @@
 .jump-start {
   padding: 150px 0 0 0;
   &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
     width: 100%;
     height: 716px;
     border-radius: 50px;
     background-color: $max-section-color;
+
+    @include crossBrowser(transition, all 0.4s ease);
   }
 }
 
 .start-info {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
+  flex: 50%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+
   padding: 153px 95px 190px 95px;
   color: #ffffff;
 
@@ -32,19 +51,51 @@
     &__item {
       background-color: $max-wrap-button-color;
       color: $headline-color;
+
+      @include crossBrowser(transition, all 0.4s ease);
+      &:hover {
+        background-color: $max-wrap-button-color-hover;
+        color: $headline-color-hover;
+
+        -webkit-box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+        box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+      }
+      &:active {
+        background-color: $max-wrap-button-color-active;
+        color: $headline-color-active;
+
+        -webkit-box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+        box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+        @include crossBrowser(transform, translateY(5px));
+      }
     }
   }
 }
 
 .start-content {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+
   padding: 117px 148px 117px 15px;
   color: #ffffff;
 }
 .start-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 48px;
 
@@ -60,7 +111,7 @@
   &__ellipse {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    @include crossBrowser(transform, translateX(-50%));
   }
   .ellipse--first {
     top: 43%;
@@ -78,8 +129,17 @@
   .start-card-num {
     width: 55px;
     position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     &--first {
@@ -88,7 +148,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        @include crossBrowser(transform, translate(-50%, -50%));
         background-image: url('../../../../../assets/icons/jump-start/first-element.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -104,7 +164,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        @include crossBrowser(transform, translate(-50%, -50%));
         background-image: url('../../../../../assets/icons/jump-start/second-element.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -120,7 +180,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        @include crossBrowser(transform, translate(-50%, -50%));
         background-image: url('../../../../../assets/icons/jump-start/third-element.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -170,7 +230,17 @@
 
     &--page-link {
       color: $alternate-text;
+
+      -webkit-text-decoration-line: underline;
       text-decoration-line: underline;
+
+      @include crossBrowser(transition, all 0.4s ease);
+      &:hover {
+        color: $alternate-text-hover;
+      }
+      &:active {
+        color: $alternate-text-active;
+      }
     }
   }
 }

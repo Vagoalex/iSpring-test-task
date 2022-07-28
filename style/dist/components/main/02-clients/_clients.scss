@@ -1,11 +1,15 @@
 .clients {
   padding: 155px 0 0 0;
   &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
 
 .cli-content {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
   &__title {
     max-width: 350px;
@@ -18,12 +22,17 @@
   }
   &__desk {
     max-width: 380px;
-    margin-bottom: 49px;
+    margin-bottom: 26px;
   }
   &__team {
+    position: relative;
+    left: -9px;
+    top: 8px;
   }
 }
 .clients-design {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
   position: relative;
   color: $alternate-text;
@@ -31,10 +40,25 @@
   .clients-design-wrapper {
     position: absolute;
     border-radius: 30px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    @include crossBrowser(transition, all 0.8s ease);
+    cursor: pointer;
   }
   &__clients {
     width: 332px;
@@ -42,6 +66,13 @@
     top: 1.5%;
     left: 13%;
     background-color: $max-section-color;
+
+    &:hover {
+      @include crossBrowser(transform, translate(-10px, -20px));
+      -webkit-box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+      box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+      color: $max-wrap-button-color;
+    }
   }
   &__years {
     height: 126px;
@@ -50,6 +81,13 @@
     left: 35.5%;
     background-color: $addition-color;
     z-index: 1;
+
+    &:hover {
+      @include crossBrowser(transform, translate(20px, -30px));
+      -webkit-box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+      box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+      color: $max-wrap-button-color;
+    }
   }
   &__customers {
     width: 503px;
@@ -57,6 +95,13 @@
     bottom: -5%;
     left: 7%;
     background-color: $main-color;
+
+    &:hover {
+      @include crossBrowser(transform, translate(5px, -30px));
+      -webkit-box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+      box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+      color: $max-wrap-button-color;
+    }
   }
 
   .cli-design {
@@ -81,8 +126,6 @@
       font-size: 16px;
       line-height: 24px;
       display: inline-block;
-    }
-    &__desk--clients {
     }
     &__desk--years {
       margin: 0px 0px 0px -2px;

@@ -14,7 +14,8 @@ body {
   overflow-x: hidden;
 
   color: #000;
-  transition: 0.4s;
+
+  @include crossBrowser(transition, all 0.4s ease);
 }
 ::-webkit-scrollbar {
   width: 0;

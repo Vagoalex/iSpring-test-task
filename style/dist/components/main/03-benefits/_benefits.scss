@@ -1,9 +1,18 @@
 .benefits {
   padding: 192px 0 0 0;
   &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+
     text-align: center;
+
+    @include crossBrowser(transition, all 0.4s ease);
   }
   &__title {
     font-weight: 700;
@@ -16,12 +25,32 @@
       background-color: $main-color;
       display: inline-block;
       color: $alternate-text;
+
+      @include crossBrowser(transition, all 0.4s ease);
+      &:hover {
+        background-color: $main-color-hover;
+        color: $alternate-text-hover;
+
+        -webkit-box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+        box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+      }
+      &:active {
+        background-color: $main-color-active;
+        color: $alternate-text-active;
+
+        -webkit-box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+        box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+        @include crossBrowser(transform, translateY(5px));
+      }
     }
   }
   &__cards {
     margin-top: 60px;
     display: grid;
+
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: repeat(3, 1fr);
+
     grid-gap: 20px;
   }
 }
@@ -30,12 +59,33 @@
   padding: 39px 46px 51px 39px;
   background-color: $min-section-color;
   border-radius: 30px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 320px;
   height: auto;
   text-align: left;
+  cursor: pointer;
+
+  @include crossBrowser(transition, all 0.4s ease);
+
+  &:hover {
+    background-color: $min-section-color-hover;
+
+    -webkit-box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+    box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+  }
 
   &--offering {
     padding: 39px 35px 51px 36px;

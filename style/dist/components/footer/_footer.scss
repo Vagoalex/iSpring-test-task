@@ -5,12 +5,19 @@
     line-height: 26px;
     color: $main-text;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    @include crossBrowser(transition, all 0.4s ease);
   }
 }
 
 .footer-copyright {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
+
   margin-left: 6px;
   &__logo {
     margin-bottom: 15px;
@@ -24,7 +31,10 @@
   }
 }
 .footer-subscribtion {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
+
   position: relative;
   left: 41px;
   padding: 0px 41px 0px 0px;
@@ -39,7 +49,12 @@
   }
 }
 .subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   &__input {
@@ -48,18 +63,52 @@
     padding: 6px 12px;
     font-size: 14px;
     line-height: 26px;
-    transition: all 0.5s ease;
+    @include crossBrowser(transition, all 0.5s ease);
     border: 1px solid #c3c4ca;
     border-radius: 3px;
 
+    &::-webkit-input-placeholder {
+      color: #8c929b;
+      @include crossBrowser(transition, all 0.5s ease);
+    }
+
+    &::-moz-placeholder {
+      color: #8c929b;
+      @include crossBrowser(transition, all 0.5s ease);
+    }
+
+    &:-ms-input-placeholder {
+      color: #8c929b;
+      @include crossBrowser(transition, all 0.5s ease);
+    }
+
+    &::-ms-input-placeholder {
+      color: #8c929b;
+      @include crossBrowser(transition, all 0.5s ease);
+    }
+
     &::placeholder {
       color: #8c929b;
-      transition: all 0.5s ease;
+      @include crossBrowser(transition, all 0.5s ease);
     }
     &:focus {
       border: 1px solid $main-color;
+      -webkit-box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.7);
       box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.7);
       border-radius: 4px;
+
+      &::-webkit-input-placeholder {
+        color: $main-color;
+      }
+      &::-moz-placeholder {
+        color: $main-color;
+      }
+      &:-ms-input-placeholder {
+        color: $main-color;
+      }
+      &::-ms-input-placeholder {
+        color: $main-color;
+      }
       &::placeholder {
         color: $main-color;
       }
@@ -75,5 +124,22 @@
     width: 144px;
     font-size: 14px;
     line-height: 26px;
+
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      background-color: $main-color-hover;
+      color: $alternate-text-hover;
+
+      -webkit-box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+      box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+    }
+    &:active {
+      background-color: $main-color-active;
+      color: $alternate-text;
+
+      -webkit-box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+      box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+      @include crossBrowser(transform, translateY(5px));
+    }
   }
 }

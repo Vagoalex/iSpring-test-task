@@ -2,14 +2,21 @@
   padding: 158px 0 0 0;
 
   &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
     height: 588px;
     width: 100%;
     background: $main-color;
     border-radius: 30px;
+    @include crossBrowser(transition, all 0.4s ease);
 
     .hero-content {
+      -webkit-box-flex: 50%;
+      -ms-flex: 50%;
       flex: 50%;
+
       padding: 115px 0px 114px 100px;
       color: $alternate-text;
 
@@ -36,11 +43,36 @@
       &__link {
         background: $max-wrap-button-color;
         color: $headline-color;
+
+        @include crossBrowser(transition, all 0.4s ease);
+        &:hover {
+          background: $max-wrap-button-color-hover;
+          color: $headline-color-hover;
+
+          -webkit-box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+          box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+        }
+        &:active {
+          background: $max-wrap-button-color-active;
+          color: $headline-color-active;
+
+          -webkit-box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+          box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+          @include crossBrowser(transform, translateY(5px));
+        }
       }
     }
     .hero-background {
+      -webkit-box-flex: 50%;
+      -ms-flex: 50%;
       flex: 50%;
+
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       position: relative;
       left: 46px;

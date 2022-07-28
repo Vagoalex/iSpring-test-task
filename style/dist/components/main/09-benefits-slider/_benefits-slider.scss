@@ -2,9 +2,20 @@
   padding: 150px 0px 0px 0px;
 
   &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+
+    @include crossBrowser(transition, all 0.4s ease);
   }
 
   &__title {
@@ -25,19 +36,32 @@
   position: relative;
 }
 .slider-buttons {
-  user-select: none;
+  @include crossBrowser(user-select, none);
+
   .slider-btn {
-    background: $alternate-text;
+    background-color: $alternate-text;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
     position: absolute;
     z-index: 20;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    transform: translateY(-50%);
+
+    @include crossBrowser(transition, all 0.4s ease);
+    @include crossBrowser(transform, translateY(-50%));
+
     top: 43%;
     cursor: pointer;
     &--next {
@@ -45,6 +69,19 @@
     }
     &--prev {
       left: -25px;
+    }
+
+    &:hover {
+      background-color: $alternate-text-hover;
+
+      -webkit-box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.35);
+      box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.35);
+    }
+    &:active {
+      background-color: $alternate-text-active;
+
+      -webkit-box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.55);
+      box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.55);
     }
   }
 }
@@ -56,12 +93,19 @@
 }
 .slide {
   height: 352px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
   background-color: $min-section-color;
 }
 
 .slide-introduction {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
+
   padding: 92px 20px 108px 96px;
   &__title {
     font-weight: 600;
@@ -71,7 +115,10 @@
   }
 }
 .slide-content {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
+
   color: $main-text;
   padding: 94px 95px 66px 55px;
 
@@ -80,7 +127,10 @@
   }
 }
 .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
   margin-top: 21px;
   &__img {
     width: 48px;
@@ -104,8 +154,14 @@
 .carousel-dots {
   margin-top: 33px;
   .carousel-indicators {
-    user-select: none;
+    @include crossBrowser(user-select, none);
+
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 15%;
     margin-left: 15%;
@@ -113,13 +169,26 @@
     &__dot {
       width: 15px;
       height: 15px;
-      border-radius: 50%;
       margin-right: 7px;
       margin-left: 7px;
-      cursor: pointer;
+      border-radius: 50%;
+
       background-color: $main-color;
       opacity: 0.5;
-      transition: opacity 0.6s ease;
+      cursor: pointer;
+
+      @include crossBrowser(transition, all 0.6s ease);
+
+      &:hover {
+        background-color: $main-color-hover;
+        opacity: 0.7;
+        @include crossBrowser(transform, translateY(-2px));
+      }
+      &:active {
+        background-color: $main-color-active;
+        opacity: 0.7;
+        @include crossBrowser(transform, translateY(-2px));
+      }
     }
   }
 }

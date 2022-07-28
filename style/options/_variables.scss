@@ -8,10 +8,27 @@ $media-small-phones: 350px;
 
 // colors
 $headline-color: #151824;
-$max-wrap-button-color: #ffc960;
-$main-color: #3d50f9;
+$headline-color-hover: #192043;
+$headline-color-active: #0f257d;
+
 $main-text: #3d3e47;
+
 $alternate-text: #fff;
-$max-section-color: #2c3442;
-$min-section-color: #fff3e1;
+$alternate-text-hover: rgb(198, 198, 198);
+$alternate-text-active: rgb(136, 136, 136);
+
+$main-color: #3d50f9;
+$main-color-hover: #132afd;
+$main-color-active: #0313a5;
+
 $addition-color: #ff7449;
+$addition-color-hover: #ff3c00;
+
+$max-section-color: #2c3442;
+
+$min-section-color: #fff3e1;
+$min-section-color-hover: #ffe4bb;
+
+$max-wrap-button-color: #ffc960;
+$max-wrap-button-color-hover: #ffb92d;
+$max-wrap-button-color-active: #e19600;

@@ -36,42 +36,63 @@
                     class="menu-list-select"
                     name="products"
                     id="products"
+                    onchange="document.location.href=this.value"
                   >
-                    <option value="default" selected>
-                      <a href="/" class="menu-list__link">Products</a>
-                    </option>
-                    <option value="product-1">
-                      <a href="/" class="menu-list__link">Some link</a>
-                    </option>
-                    <option value="product-2">
-                      <a href="/" class="menu-list__link">Some link</a>
-                    </option>
-                    <option value="product-3">
-                      <a href="/" class="menu-list__link">Some link</a>
-                    </option>
-                    <option value="product-4">
-                      <a href="/" class="menu-list__link">Some link</a>
-                    </option>
-                    <option value="product-2">
-                      <a href="/" class="menu-list__link">Some link</a>
-                    </option>
+                    <option value="#hero" selected>Products</option>
+                    <option value="#hero">Program</option>
+                    <option value="#clients">Clients</option>
+                    <option value="#benefits">Benefits</option>
+                    <option value="#jump-start">Start</option>
+                    <option value="#promote">Promote</option>
+                    <option value="#manage-sales">Sales</option>
+                    <option value="#product-languages">Langs</option>
+                    <option value="#questions">Question</option>
+                    <option value="#benefits-slider">Feedback</option>
+                    <option value="#partner-form">Form</option>
+                    <option value="#footer">Contacts</option>
                   </select>
                 </label>
               </li>
               <li class="menu-list__item">
-                <a href="/" class="menu-list__link">Pricing</a>
+                <a href="https://www.ispring.ru" class="menu-list__link">
+                  Pricing
+                </a>
               </li>
               <li class="menu-list__item">
-                <a href="/" class="menu-list__link">Support</a>
+                <a
+                  href="https://www.ispring.ru"
+                  target="_blank"
+                  class="menu-list__link"
+                >
+                  Support
+                </a>
               </li>
               <li class="menu-list__item">
-                <a href="/" class="menu-list__link">Customers</a>
+                <a
+                  href="https://www.ispring.ru"
+                  target="_blank"
+                  class="menu-list__link"
+                >
+                  Customers
+                </a>
               </li>
               <li class="menu-list__item">
-                <a href="/" class="menu-list__link">Company</a>
+                <a
+                  href="https://www.ispring.ru"
+                  target="_blank"
+                  class="menu-list__link"
+                >
+                  Company
+                </a>
               </li>
               <li class="menu-list__item">
-                <a href="/" class="menu-list__link">Blog</a>
+                <a
+                  href="https://www.ispring.ru"
+                  target="_blank"
+                  class="menu-list__link"
+                >
+                  Blog
+                </a>
               </li>
             </ul>
           </nav>
@@ -884,7 +905,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer__container wrapper-min">
         <div class="footer-copyright">
           <div class="footer-copyright__logo logo">
@@ -899,7 +920,6 @@
             © 2001-2020 iSpring Solutions Inc. All rights reserved. Terms of Use
             | Privacy Policy
           </p>
-          <!-- &copy; -->
         </div>
         <div class="footer-subscribtion">
           <h4 class="footer-subscribtion__title">

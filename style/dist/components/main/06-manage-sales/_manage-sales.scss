@@ -2,9 +2,22 @@
   padding: 150px 0px 0px 0px;
   &__container {
     padding: 0px 20px 0px 25px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    @include crossBrowser(transition, all 0.4s ease);
   }
   &__graphic {
+    border-radius: 10px;
+    cursor: pointer;
+    @include crossBrowser(transition, all 0.4s ease);
+    &:hover {
+      @include crossBrowser(transform, scale(1));
+      -webkit-box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+      box-shadow: 0px 2px 33px rgb(22 25 32 / 65%);
+    }
   }
   &__content {
     padding: 0px 75px 0px 49px;
@@ -26,6 +39,23 @@
     &__item {
       background-color: $main-color;
       color: $alternate-text;
+
+      @include crossBrowser(transition, all 0.4s ease);
+      &:hover {
+        background-color: $main-color-hover;
+        color: $alternate-text-hover;
+
+        -webkit-box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+        box-shadow: 0px 9px 23px rgb(22 25 32 / 35%);
+      }
+      &:active {
+        background-color: $main-color-active;
+        color: $alternate-text-active;
+
+        -webkit-box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+        box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
+        @include crossBrowser(transform, translateY(5px));
+      }
     }
   }
 }
