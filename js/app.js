@@ -1,5 +1,8 @@
-import { slider } from '../js/slider.js';
-
 window.addEventListener('DOMContentLoaded', function () {
-  slider();
+  new ItcSimpleSlider('.itcss', {
+    loop: true,
+    autoplay: false,
+    interval: 5000,
+    swipe: true,
+  });
 });

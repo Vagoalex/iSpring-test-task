@@ -10,6 +10,13 @@
     display: flex;
 
     @include crossBrowser(transition, all 0.4s ease);
+
+    @media (max-width: $media-laptops) {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: $media-laptops) {
+    padding: 70px 0px 60px 0px;
   }
 }
 
@@ -24,6 +31,11 @@
   }
   &__text {
     max-width: 375px;
+  }
+
+  @media (max-width: $media-laptops) {
+    margin-left: 0px;
+    margin-bottom: 30px;
   }
 }
 .logo {
@@ -46,6 +58,11 @@
   }
   &__desk {
     margin-bottom: 16px;
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 0;
+    left: 0;
   }
 }
 .subscribe-form {
@@ -112,6 +129,10 @@
       &::placeholder {
         color: $main-color;
       }
+    }
+
+    @media (max-width: $media-laptops) {
+      width: 396px;
     }
   }
   &__btn {

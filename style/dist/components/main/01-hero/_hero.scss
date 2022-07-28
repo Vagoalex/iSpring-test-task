@@ -25,6 +25,10 @@
         font-size: 22px;
         line-height: 22px;
         margin-bottom: 10px;
+
+        @media (max-width: $media-laptops) {
+          font-size: 18px;
+        }
       }
       &__title {
         font-weight: 700;
@@ -32,6 +36,10 @@
         line-height: 97%;
         margin: 0;
         margin: 0px 0px 31px 0px;
+
+        @media (max-width: $media-laptops) {
+          font-size: 32px;
+        }
       }
       &__desk {
         max-width: 445px;
@@ -39,6 +47,11 @@
         font-size: 24px;
         line-height: 120%;
         margin-bottom: 55px;
+
+        @media (max-width: $media-laptops) {
+          font-size: 19px;
+          max-width: 260px;
+        }
       }
       &__link {
         background: $max-wrap-button-color;
@@ -61,6 +74,9 @@
           @include crossBrowser(transform, translateY(5px));
         }
       }
+      @media (max-width: $media-laptops) {
+        padding: 43px 0px 35px 42px;
+      }
     }
     .hero-background {
       -webkit-box-flex: 50%;
@@ -81,14 +97,34 @@
         position: absolute;
         left: -11.5%;
         bottom: 14.5%;
+        @media (max-width: $media-laptops) {
+          max-width: 40%;
+          left: -12.5%;
+          bottom: 17.5%;
+        }
       }
       &__img {
+        @media (max-width: $media-laptops) {
+          max-width: 80%;
+        }
       }
       &__handles {
         position: absolute;
         right: 18.5%;
         top: 14.5%;
+        @media (max-width: $media-laptops) {
+          max-width: 40%;
+          right: 8.5%;
+          top: 18.5%;
+        }
       }
+      @media (max-width: $media-laptops) {
+        left: 32px;
+      }
+    }
+
+    @media (max-width: $media-laptops) {
+      height: 450px;
     }
   }
 }

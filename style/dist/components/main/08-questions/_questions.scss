@@ -38,6 +38,10 @@
 
     margin-top: 22px;
   }
+
+  @media (max-width: $media-laptops) {
+    padding: 35px 0px 35px 55px;
+  }
 }
 .questions-info {
   -webkit-box-flex: 50%;
@@ -67,5 +71,9 @@
         text-decoration: underline;
       }
     }
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 108px 30px 25px 24px;
   }
 }

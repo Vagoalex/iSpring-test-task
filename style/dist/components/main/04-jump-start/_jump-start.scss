@@ -40,6 +40,10 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 46px;
+
+    @media (max-width: $media-laptops) {
+      font-size: 40px;
+    }
   }
   &__desk {
     margin-top: 28px;
@@ -70,6 +74,10 @@
       }
     }
   }
+
+  @media (max-width: $media-laptops) {
+    padding: 105px 20px 105px 35px;
+  }
 }
 
 .start-content {
@@ -92,6 +100,10 @@
 
   padding: 117px 148px 117px 15px;
   color: #ffffff;
+
+  @media (max-width: $media-laptops) {
+    padding: 70px 35px 50px 10px;
+  }
 }
 .start-card {
   display: -webkit-box;
@@ -214,18 +226,34 @@
     font-size: 22px;
     line-height: 26px;
     margin-top: -17px;
+
+    @media (max-width: $media-laptops) {
+      font-size: 20px;
+    }
   }
   &__desk {
     margin-top: 12px;
 
     &--first {
       max-width: 332px;
+      @media (max-width: $media-laptops) {
+        max-width: 100%;
+        text-align: justify;
+      }
     }
     &--second {
       max-width: 354px;
+      @media (max-width: $media-laptops) {
+        max-width: 100%;
+        text-align: justify;
+      }
     }
     &--third {
       max-width: 346px;
+      @media (max-width: $media-laptops) {
+        max-width: 100%;
+        text-align: justify;
+      }
     }
 
     &--page-link {
@@ -241,6 +269,10 @@
       &:active {
         color: $alternate-text-active;
       }
+    }
+
+    @media (max-width: $media-laptops) {
+      font-size: 14px;
     }
   }
 }

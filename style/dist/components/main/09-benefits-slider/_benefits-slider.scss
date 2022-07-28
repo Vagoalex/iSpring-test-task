@@ -28,24 +28,32 @@
     &--first {
       margin-left: -13px;
     }
+
+    @media (max-width: $media-laptops) {
+      font-size: 38px;
+    }
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 130px 0px 0px 0px;
   }
 }
 
 .slider {
   margin-top: 59px;
-  position: relative;
+
+  @media (max-width: $media-laptops) {
+    margin-top: 25px;
+  }
 }
 .slider-buttons {
   @include crossBrowser(user-select, none);
 
   .slider-btn {
     background-color: $alternate-text;
-    width: 50px;
-    height: 50px;
+
     border-radius: 50%;
     box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
-    position: absolute;
-    z-index: 20;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -60,10 +68,9 @@
     align-items: center;
 
     @include crossBrowser(transition, all 0.4s ease);
-    @include crossBrowser(transform, translateY(-50%));
 
-    top: 43%;
     cursor: pointer;
+
     &--next {
       right: -25px;
     }
@@ -85,12 +92,7 @@
     }
   }
 }
-.slider-wrapper {
-  overflow: hidden;
-  border-radius: 30px;
-}
-.slider-inner {
-}
+
 .slide {
   height: 352px;
 
@@ -106,12 +108,44 @@
   -ms-flex: 50%;
   flex: 50%;
 
+  position: relative;
   padding: 92px 20px 108px 96px;
+
   &__title {
     font-weight: 600;
     font-size: 32px;
     line-height: 120%;
     color: $headline-color;
+    z-index: 2;
+
+    @media (max-width: $media-laptops) {
+      font-size: 24px;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-image: url('../../../../../assets/icons/benefits-slider/slider-design.png');
+    width: 123px;
+    height: 87px;
+    z-index: -1;
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 70px 10px 40px 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      background-image: url('../../../../../assets/icons/benefits-slider/slider-design.png');
+      width: 123px;
+      height: 87px;
+      z-index: -1;
+    }
   }
 }
 .slide-content {
@@ -124,6 +158,10 @@
 
   &__desk {
     max-width: 350px;
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 75px 25px 30px 25px;
   }
 }
 .person {
@@ -151,44 +189,133 @@
   }
 }
 
-.carousel-dots {
-  margin-top: 33px;
-  .carousel-indicators {
-    @include crossBrowser(user-select, none);
+/**
+  * SimpleAdaptiveSlider by Itchief v2.0.0 (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
+  * Copyright 2020 - 2021 Alexander Maltsev
+  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+  */
 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+/* стили для корневого элемента слайдера */
+.itcss {
+  position: relative;
 
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-    &__dot {
-      width: 15px;
-      height: 15px;
-      margin-right: 7px;
-      margin-left: 7px;
-      border-radius: 50%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 
-      background-color: $main-color;
-      opacity: 0.5;
-      cursor: pointer;
-
-      @include crossBrowser(transition, all 0.6s ease);
-
-      &:hover {
-        background-color: $main-color-hover;
-        opacity: 0.7;
-        @include crossBrowser(transform, translateY(-2px));
-      }
-      &:active {
-        background-color: $main-color-active;
-        opacity: 0.7;
-        @include crossBrowser(transform, translateY(-2px));
-      }
-    }
+  @media (max-width: $media-laptops) {
+    max-width: 700px;
   }
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}
+
+/* стили для элементов */
+.itcss__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* кнопки Prev и Next */
+.itcss__control {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+.itcss__control_prev {
+  left: 0;
+  &::before {
+    content: '';
+
+    position: relative;
+    z-index: 1000;
+    background-image: url('../../../../../assets/icons/benefits-slider/slider-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.itcss__control_next {
+  right: 0;
+  &::before {
+    content: '';
+    position: relative;
+    z-index: 1000;
+    background-image: url('../../../../../assets/icons/benefits-slider/slider-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Индикаторы */
+.itcss__indicators {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -48px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 15%;
+  list-style: none;
+  user-select: none;
+}
+
+.itcss__indicator {
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 50%;
+
+  background-color: $main-color;
+  opacity: 0.5;
+  cursor: pointer;
+
+  @include crossBrowser(transition, all 0.6s ease);
+
+  &:hover {
+    background-color: $main-color-hover;
+    opacity: 0.7;
+    @include crossBrowser(transform, translateY(-2px));
+  }
+  &:active {
+    background-color: $main-color-active;
+    opacity: 0.7;
+    @include crossBrowser(transform, translateY(-2px));
+  }
+}
+
+.itcss__indicator_active {
+  background-color: $main-color;
+  opacity: 1;
 }

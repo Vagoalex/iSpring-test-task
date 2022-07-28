@@ -4,6 +4,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    @media (max-width: $media-laptops) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 100px 0 0 0;
   }
 }
 
@@ -28,6 +36,10 @@
     position: relative;
     left: -9px;
     top: 8px;
+  }
+
+  @media (max-width: $media-laptops) {
+    margin-left: 46px;
   }
 }
 .clients-design {
@@ -133,5 +145,10 @@
     &__desk--customers {
       margin: 5px 0px 0px -15px;
     }
+  }
+
+  @media (max-width: $media-laptops) {
+    min-height: 360px;
+    margin-top: 40px;
   }
 }

@@ -19,6 +19,10 @@
     margin: 0 auto;
 
     @include crossBrowser(transition, all 0.4s ease);
+
+    @media (max-width: $media-laptops) {
+      max-width: 700px;
+    }
   }
 }
 
@@ -28,6 +32,10 @@
     font-size: 42px;
     line-height: 46px;
     color: $headline-color;
+
+    @media (max-width: $media-laptops) {
+      font-size: 38px;
+    }
   }
   &__desk {
     margin-top: 16px;
@@ -89,9 +97,17 @@
 
     &:nth-child(11) {
       margin: 0px 6px 16px 0px;
+
+      @media (max-width: $media-laptops) {
+        margin: 0px 6px 16px 6px;
+      }
     }
     &:nth-child(18) {
       margin: 0px 0px 16px 6px;
+
+      @media (max-width: $media-laptops) {
+        margin: 0px 6px 16px 6px;
+      }
     }
 
     &__circle {

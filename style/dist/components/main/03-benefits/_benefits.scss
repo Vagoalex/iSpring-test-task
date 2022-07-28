@@ -18,6 +18,10 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 46px;
+
+    @media (max-width: $media-laptops) {
+      font-size: 39px;
+    }
   }
   &__link {
     margin-top: 72px;
@@ -52,6 +56,12 @@
     grid-template-columns: repeat(3, 1fr);
 
     grid-gap: 20px;
+
+    @media (max-width: $media-laptops) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -122,6 +132,10 @@
     line-height: 26px;
     color: $headline-color;
     margin-top: 35px;
+
+    @media (max-width: $media-laptops) {
+      margin-top: 8px;
+    }
   }
   &__desk {
     font-size: 16px;
@@ -130,12 +144,31 @@
 
     &--bonuses {
       max-width: 222px;
+      @media (max-width: $media-laptops) {
+        max-width: 100%;
+      }
     }
     &--support {
       max-width: 240px;
+      @media (max-width: $media-laptops) {
+        max-width: 100%;
+      }
     }
     &--offering {
       max-width: 255px;
+      @media (max-width: $media-laptops) {
+        max-width: 100%;
+      }
     }
+
+    @media (max-width: $media-laptops) {
+      width: 480px;
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 25px 55px;
+    width: 480px;
   }
 }

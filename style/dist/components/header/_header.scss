@@ -22,10 +22,24 @@
     justify-content: space-between;
 
     @include crossBrowser(transition, all 0.4s ease);
+
+    @media (max-width: $media-laptops) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 84px;
+    }
   }
 
   &__logo {
     margin-right: 26px;
+    @media (max-width: $media-laptops) {
+      margin-right: 0px;
+    }
   }
 
   &__links {
@@ -40,6 +54,16 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    @media (max-width: $media-laptops) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
   }
 
   &__options {
@@ -153,5 +177,10 @@
     &:hover {
       color: $addition-color;
     }
+  }
+  @media (max-width: $media-laptops) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }

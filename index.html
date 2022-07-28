@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
     <title>iSpring test task</title>
   </head>
@@ -178,7 +182,11 @@
               leader in course authoring and learning management — iSpring.
             </p>
             <div class="cli-content__team">
-              <img src="assets/images/clients/clients.png" alt="clients team" />
+              <img
+                src="assets/images/clients/clients.png"
+                alt="clients team"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -229,6 +237,7 @@
                   src="assets/icons/benefits/bonuses.svg"
                   alt="bonuses"
                   class="benefits-card__capture--bonuses"
+                  loading="lazy"
                 />
               </div>
               <h4 class="benefits-card__title">
@@ -246,11 +255,13 @@
                   src="assets/icons/benefits/support--before.svg"
                   alt="offering"
                   class="benefits-card__capture--support-before"
+                  loading="lazy"
                 />
                 <img
                   src="assets/icons/benefits/support.svg"
                   alt="support"
                   class="benefits-card__capture--support"
+                  loading="lazy"
                 />
               </div>
               <h4 class="benefits-card__title benefits-card__title--support">
@@ -268,6 +279,7 @@
                   src="assets/icons/benefits/offering.svg"
                   alt="offering"
                   class="benefits-card__capture--offering"
+                  loading="lazy"
                 />
               </div>
               <h4 class="benefits-card__title benefits-card__title--offering">
@@ -327,21 +339,25 @@
                   class="start-card-number__ellipse ellipse--first"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
                 <img
                   class="start-card-number__ellipse ellipse--second"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
                 <img
                   class="start-card-number__ellipse ellipse--third"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
                 <img
                   class="start-card-number__ellipse ellipse--fourth"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
               </div>
 
@@ -370,21 +386,25 @@
                   class="start-card-number__ellipse ellipse--first"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
                 <img
                   class="start-card-number__ellipse ellipse--second"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
                 <img
                   class="start-card-number__ellipse ellipse--third"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
                 <img
                   class="start-card-number__ellipse ellipse--fourth"
                   src="assets/icons/jump-start/ellipse.svg"
                   alt="ellipse"
+                  loading="lazy"
                 />
               </div>
 
@@ -432,6 +452,7 @@
                 src="assets/icons/promote/free-licenses.svg"
                 alt="free licenses"
                 class="promote-info-card__capture--licenses"
+                loading="lazy"
               />
             </div>
             <h4
@@ -454,6 +475,7 @@
                 src="assets/icons/promote/aids.svg"
                 alt="marketing aids"
                 class="promote-info-card__capture--aids"
+                loading="lazy"
               />
             </div>
             <h4 class="promote-info-card__title">Marketing aids</h4>
@@ -471,6 +493,7 @@
                 src="assets/icons/promote/co-activities.svg"
                 alt="co-marketing activities"
                 class="promote-info-card__capture--co-activities"
+                loading="lazy"
               />
             </div>
             <h4 class="promote-info-card__title">Co-marketing activities</h4>
@@ -488,6 +511,7 @@
             class="manage-sales__graphic"
             src="assets/images/manage-sales/manage-sales-min.png"
             alt="manage your sales graphic"
+            loading="lazy"
           />
 
           <div class="manage-sales__content sales">
@@ -607,6 +631,7 @@
                 alt="questions logo"
                 height="60px"
                 width="60px"
+                loading="lazy"
               />
             </div>
             <h2 class="questions-introduction__title">
@@ -637,29 +662,11 @@
           <h2 class="benefits-slider__title wrapper-min">
             from partnering with iSpring
           </h2>
-          <div class="slider wrapper-min">
-            <div class="slider-buttons">
-              <div class="slider-prev">
-                <div class="slider-btn slider-btn--prev">
-                  <img
-                    src="assets/icons/benefits-slider/slider-left.svg"
-                    alt="btn prev"
-                  />
-                </div>
-              </div>
-              <div class="slider-next">
-                <div class="slider-btn slider-btn--next">
-                  <img
-                    src="assets/icons/benefits-slider/slider-right.svg"
-                    alt="btn next"
-                  />
-                </div>
-              </div>
-            </div>
 
-            <div class="slider-wrapper">
-              <div class="slider-inner">
-                <div class="slide">
+          <div class="itcss slider">
+            <div class="itcss__wrapper">
+              <div class="itcss__items">
+                <div class="itcss__item slide">
                   <div class="slide-introduction">
                     <h2 class="slide-introduction__title">
                       Our income from partnering with iSpring has been
@@ -691,7 +698,7 @@
                   </div>
                 </div>
 
-                <div class="slide">
+                <div class="itcss__item slide">
                   <div class="slide-introduction">
                     <h2 class="slide-introduction__title">Some cool Slider</h2>
                   </div>
@@ -716,7 +723,7 @@
                   </div>
                 </div>
 
-                <div class="slide">
+                <div class="itcss__item slide">
                   <div class="slide-introduction">
                     <h2 class="slide-introduction__title">Very cool Slider!</h2>
                   </div>
@@ -738,7 +745,7 @@
                   </div>
                 </div>
 
-                <div class="slide">
+                <div class="itcss__item slide">
                   <div class="slide-introduction">
                     <h2 class="slide-introduction__title">
                       Very-very perfect cool Slider!!!!
@@ -764,7 +771,7 @@
                   </div>
                 </div>
 
-                <div class="slide">
+                <div class="itcss__item slide">
                   <div class="slide-introduction">
                     <h2 class="slide-introduction__title">
                       Must heave very-very perfect super-duper cool
@@ -793,7 +800,7 @@
                   </div>
                 </div>
 
-                <div class="slide">
+                <div class="itcss__item slide">
                   <div class="slide-introduction">
                     <h2 class="slide-introduction__title">
                       Perfecto fetuchinni very amazing must heave perfect
@@ -821,11 +828,22 @@
                 </div>
               </div>
             </div>
-
-            <div class="carousel-dots">
-              <ul class="carousel-indicators">
-                <!-- in js -->
-              </ul>
+            <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+            <div class="slider-buttons">
+              <div class="slider-button-prev">
+                <div
+                  role="button"
+                  data-slide="prev"
+                  class="itcss__control itcss__control_prev slider-btn slider-btn--prev"
+                ></div>
+              </div>
+              <div class="slider-button-next">
+                <div
+                  role="button"
+                  data-slide="next"
+                  class="itcss__control itcss__control_next slider-btn slider-btn--next"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -950,6 +968,7 @@
       </div>
     </footer>
 
+    <script defer src="js/simple-adaptive-slider.js"></script>
     <script type="module" src="js/app.js"></script>
   </body>
 </html>

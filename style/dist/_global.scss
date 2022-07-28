@@ -48,22 +48,18 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 
-  // @media (max-width: $mediaLaptops) {
-  //   max-width: 965px;
-  // }
-  // @media (max-width: $mediaSmallDesktops) {
-  //   max-width: 650px;
-  // }
-  // @media (max-width: $mediaTablets) {
-  //   max-width: 625px;
-  // }
-  // @media (max-width: $mediaSmallTablets) {
-  //   max-width: 400px;
-  // }
-  // @media (max-width: $mediaPhones) {
+  @media (max-width: $media-laptops) {
+    max-width: 700px;
+  }
+
+  @media (max-width: $media-tablets) {
+    max-width: 380px;
+  }
+
+  // @media (max-width: $media-phones) {
   //   max-width: 350px;
   // }
-  // @media (max-width: $mediaSmallPhones) {
+  // @media (max-width: $media-small-phones) {
   //   max-width: 260px;
   // }
 }
@@ -71,22 +67,18 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
 
-  // @media (max-width: $mediaLaptops) {
-  //   max-width: 965px;
-  // }
-  // @media (max-width: $mediaSmallDesktops) {
-  //   max-width: 650px;
-  // }
-  // @media (max-width: $mediaTablets) {
-  //   max-width: 625px;
-  // }
-  // @media (max-width: $mediaSmallTablets) {
-  //   max-width: 400px;
-  // }
-  // @media (max-width: $mediaPhones) {
+  @media (max-width: $media-laptops) {
+    max-width: 550px;
+  }
+
+  @media (max-width: $media-tablets) {
+    max-width: 380px;
+  }
+
+  // @media (max-width: $media-phones) {
   //   max-width: 350px;
   // }
-  // @media (max-width: $mediaSmallPhones) {
+  // @media (max-width: $media-small-phones) {
   //   max-width: 260px;
   // }
 }

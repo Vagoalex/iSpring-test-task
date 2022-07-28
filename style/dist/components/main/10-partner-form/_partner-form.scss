@@ -1,5 +1,5 @@
 .partner-form {
-  padding: 150px 0px 0px 0px;
+  padding: 198px 0px 0px 0px;
   &__wrapper {
     background-color: $max-section-color;
   }
@@ -10,6 +10,15 @@
 
     padding: 98px 0px 109px 0px;
     @include crossBrowser(transition, all 0.4s ease);
+
+    @media (max-width: $media-laptops) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 150px 0px 0px 0px;
   }
 }
 .form-introduction {
@@ -46,6 +55,10 @@
     max-width: 295px;
     position: relative;
     z-index: 1;
+  }
+
+  @media (max-width: $media-laptops) {
+    margin-bottom: 80px;
   }
 }
 
@@ -206,5 +219,10 @@
       box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
       @include crossBrowser(transform, translateY(5px));
     }
+  }
+
+  @media (max-width: $media-laptops) {
+    padding: 44px 30px 65px 30px;
+    width: 485px;
   }
 }
