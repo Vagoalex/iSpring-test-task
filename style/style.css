@@ -1597,7 +1597,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../../../../../assets/icons/jump-start/first-element.svg");
+  background-image: url("../../../../../iSpring-test-task/assets/icons/jump-start/first-element.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -1611,7 +1611,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../../../../../assets/icons/jump-start/second-element.svg");
+  background-image: url("../../../../../iSpring-test-task/assets/icons/jump-start/second-element.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -1625,7 +1625,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../../../../../assets/icons/jump-start/third-element.svg");
+  background-image: url("../../../../../iSpring-test-task/assets/icons/jump-start/third-element.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -1634,7 +1634,7 @@ footer {
   z-index: 1;
 }
 .start-card-number .start-card-num__item {
-  font-family: "Euclid Circular B";
+  font-family: "Euclid Circular B", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
@@ -2262,7 +2262,7 @@ footer {
   position: absolute;
   top: 15%;
   left: 15%;
-  background-image: url("../../../../../assets/icons/benefits-slider/slider-design.png");
+  background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png");
   width: 123px;
   height: 87px;
   z-index: -1;
@@ -2276,7 +2276,7 @@ footer {
     position: absolute;
     top: 10%;
     left: 5%;
-    background-image: url("../../../../../assets/icons/benefits-slider/slider-design.png");
+    background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png");
     width: 123px;
     height: 87px;
     z-index: -1;
@@ -2419,8 +2419,8 @@ footer {
 .itcss__control_prev::before {
   content: "";
   position: relative;
-  z-index: 1000;
-  background-image: url("../../../../../assets/icons/benefits-slider/slider-left.svg");
+  z-index: 10;
+  background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 50px;
@@ -2434,7 +2434,7 @@ footer {
   content: "";
   position: relative;
   z-index: 1000;
-  background-image: url("../../../../../assets/icons/benefits-slider/slider-right.svg");
+  background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 50px;

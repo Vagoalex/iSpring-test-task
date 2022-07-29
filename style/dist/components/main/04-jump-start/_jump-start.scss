@@ -208,7 +208,10 @@
         top: 50%;
         left: 50%;
         @include crossBrowser(transform, translate(-50%, -50%));
-        background-image: url('../../../../../assets/icons/jump-start/first-element.svg');
+
+        // background-image: url('../../../../../assets/icons/jump-start/first-element.svg');
+
+        background-image: url('../../../../../iSpring-test-task/assets/icons/jump-start/first-element.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: auto;
@@ -224,7 +227,8 @@
         top: 50%;
         left: 50%;
         @include crossBrowser(transform, translate(-50%, -50%));
-        background-image: url('../../../../../assets/icons/jump-start/second-element.svg');
+        // background-image: url('../../../../../assets/icons/jump-start/second-element.svg');
+        background-image: url('../../../../../iSpring-test-task/assets/icons/jump-start/second-element.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: auto;
@@ -240,7 +244,8 @@
         top: 50%;
         left: 50%;
         @include crossBrowser(transform, translate(-50%, -50%));
-        background-image: url('../../../../../assets/icons/jump-start/third-element.svg');
+        // background-image: url('../../../../../assets/icons/jump-start/third-element.svg');
+        background-image: url('../../../../../iSpring-test-task/assets/icons/jump-start/third-element.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: auto;
@@ -251,7 +256,7 @@
     }
 
     &__item {
-      font-family: 'Euclid Circular B';
+      font-family: 'Euclid Circular B', sans-serif;
       font-weight: 500;
       font-size: 22px;
       line-height: 26px;
