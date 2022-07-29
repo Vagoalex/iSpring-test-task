@@ -1,25 +1,61 @@
-// const validate = (values) => {
-//   const errors = {};
+function validateForm(fields, btn) {
+  fields.forEach((inp) => {
+    if (inp.required) {
+      inp.addEventListener('change', () => {
+        checkField(inp, btn);
+      });
+    }
+  });
+}
 
-//   if (!values.name) {
-//     errors.name = 'Укажите имя.';
-//   } else if (values.name.length < 4) {
-//     errors.name = 'Минимум 4 символа.';
-//   }
+function checkElementMatch(input) {
+  const validityState = input.validity;
+  let name = '';
 
-//   if (!values.email) {
-//     errors.email = 'Укажите email.';
-//   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-//     errors.email = 'Неверный email адрес.';
-//   }
+  switch (input.name) {
+    case 'partner-form-name':
+      name = 'Name';
+      break;
+    case 'partner-form-phone':
+      name = 'Phone';
+      break;
+    case 'partner-form-email':
+      name = 'Email';
+      break;
+    case 'partner-form-text':
+      name = 'Textarea';
+      break;
 
-//   if (!values.amount || values.amount < 10) {
-//     errors.amount = 'Минимальное количество - 10.';
-//   }
+    default:
+      name = '';
+      break;
+  }
 
-//   if (values.currency === '') {
-//     errors.currency = 'Поле не должно быть пустым.';
-//   }
+  if (validityState.valueMissing) {
+    input.setCustomValidity(`${name} is required`);
+  }
+  input.reportValidity();
+}
 
-//   return errors;
-// };
+function checkField(inp, btn) {
+  if (inp.checkValidity()) {
+    inp.classList.remove('field-invalid');
+    inp.classList.add('field-valid');
+
+    checkElementMatch(inp);
+
+    btn.disabled = inp.checkValidity() ? false : true;
+    btn.disabled ? btn.classList.add('btn-invalid') : null;
+  } else {
+    inp.classList.remove('field-valid');
+    inp.classList.add('field-invalid');
+    inp.reportValidity();
+
+    checkElementMatch(inp);
+
+    btn.disabled = inp.checkValidity() ? false : true;
+    btn.disabled ? btn.classList.add('btn-invalid') : null;
+  }
+}
+
+export default validateForm;

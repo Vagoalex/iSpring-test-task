@@ -876,44 +876,48 @@
             </div>
 
             <div class="form-wrap">
-              <form class="form">
+              <form id="partner-form" class="form">
                 <h2 class="form__title">Company Information</h2>
-                <label htmlFor="name">
+                <label htmlFor="partner-form-name">
                   <input
-                    class="form__input"
-                    id="name"
-                    name="name"
+                    class="form__input partner-form-field"
+                    id="partner-form-name"
+                    name="partner-form-name"
                     type="text"
-                    placeholder="Company name"
+                    placeholder="Company name *"
+                    required
                   />
                 </label>
 
-                <label htmlFor="phone">
+                <label htmlFor="partner-form-phone">
                   <input
-                    class="form__input"
-                    id="number"
-                    name="phone"
-                    type="phone"
-                    placeholder="Phone"
+                    class="form__input partner-form-field"
+                    id="partner-form-phone"
+                    name="partner-form-phone"
+                    type="number"
+                    placeholder="Phone *"
+                    required
                   />
                 </label>
 
-                <label htmlFor="email">
+                <label htmlFor="partner-form-email">
                   <input
-                    class="form__input"
-                    id="email"
-                    name="email"
+                    class="form__input partner-form-field"
+                    id="partner-form-email"
+                    name="partner-form-email"
                     type="email"
-                    placeholder="Email"
+                    placeholder="Email *"
+                    required
                   />
                 </label>
 
-                <label htmlFor="text">
+                <label htmlFor="partner-form-text">
                   <textarea
-                    class="form__input form__textarea"
-                    id="text"
-                    name="text"
-                    placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"
+                    class="form__input form__textarea partner-form-field"
+                    id="partner-form-text"
+                    name="partner-form-text"
+                    placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner) *"
+                    required
                   ></textarea>
                 </label>
 
@@ -925,7 +929,7 @@
                 </p>
 
                 <button
-                  id="form-btn"
+                  id="partner-form-btn"
                   class="form__btn link-button"
                   type="submit"
                 >
