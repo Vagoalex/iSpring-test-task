@@ -42,6 +42,11 @@ footer {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  @media (max-width: $media-phones) {
+    font-size: 15px;
+    padding: 15px 31px;
+  }
 }
 
 .wrapper-max {
@@ -53,15 +58,15 @@ footer {
   }
 
   @media (max-width: $media-tablets) {
-    max-width: 380px;
+    max-width: 365px;
   }
 
-  // @media (max-width: $media-phones) {
-  //   max-width: 350px;
-  // }
-  // @media (max-width: $media-small-phones) {
-  //   max-width: 260px;
-  // }
+  @media (max-width: $media-phones) {
+    max-width: 330px;
+  }
+  @media (max-width: $media-small-phones) {
+    max-width: 290px;
+  }
 }
 .wrapper-min {
   max-width: 1000px;
@@ -72,13 +77,13 @@ footer {
   }
 
   @media (max-width: $media-tablets) {
-    max-width: 380px;
+    max-width: 330px;
   }
 
-  // @media (max-width: $media-phones) {
-  //   max-width: 350px;
-  // }
-  // @media (max-width: $media-small-phones) {
-  //   max-width: 260px;
-  // }
+  @media (max-width: $media-phones) {
+    max-width: 300px;
+  }
+  @media (max-width: $media-small-phones) {
+    max-width: 260px;
+  }
 }

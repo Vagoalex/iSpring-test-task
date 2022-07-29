@@ -23,6 +23,15 @@
     @media (max-width: $media-laptops) {
       max-width: 700px;
     }
+    @media (max-width: $media-tablets) {
+      max-width: 365px;
+    }
+    @media (max-width: $media-phones) {
+      max-width: 330px;
+    }
+    @media (max-width: $media-small-phones) {
+      max-width: 290px;
+    }
   }
 }
 
@@ -35,6 +44,12 @@
 
     @media (max-width: $media-laptops) {
       font-size: 38px;
+    }
+    @media (max-width: $media-tablets) {
+      font-size: 34px;
+    }
+    @media (max-width: $media-phones) {
+      font-size: 31px;
     }
   }
   &__desk {
@@ -121,5 +136,11 @@
     &__country {
       font-weight: 500;
     }
+  }
+
+  @media (max-width: $media-tablets) {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 }

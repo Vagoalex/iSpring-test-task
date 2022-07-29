@@ -26,11 +26,21 @@
     color: $headline-color;
     max-width: 645px;
     &--first {
-      margin-left: -13px;
+      @media (max-width: $media-tablets) {
+        margin-left: 0px;
+      }
     }
 
     @media (max-width: $media-laptops) {
       font-size: 38px;
+    }
+    @media (max-width: $media-tablets) {
+      font-size: 33px;
+      max-width: 340px;
+    }
+    @media (max-width: $media-small-phones) {
+      font-size: 28px;
+      max-width: 280px;
     }
   }
 
@@ -53,6 +63,7 @@
     background-color: $alternate-text;
 
     border-radius: 50%;
+    -webkit-box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
     box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
 
     display: -webkit-box;
@@ -101,6 +112,17 @@
   display: flex;
 
   background-color: $min-section-color;
+
+  @media (max-width: $media-tablets) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: auto;
+  }
 }
 
 .slide-introduction {
@@ -120,6 +142,9 @@
 
     @media (max-width: $media-laptops) {
       font-size: 24px;
+    }
+    @media (max-width: $media-phones) {
+      font-size: 20px;
     }
   }
   &::before {
@@ -147,6 +172,16 @@
       z-index: -1;
     }
   }
+
+  @media (max-width: $media-phones) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    padding: 70px 15px 40px 15px;
+  }
+  @media (max-width: $media-small-phones) {
+    padding: 70px 25px 40px 25px;
+  }
 }
 .slide-content {
   -webkit-box-flex: 50%;
@@ -162,6 +197,18 @@
 
   @media (max-width: $media-laptops) {
     padding: 75px 25px 30px 25px;
+  }
+  @media (max-width: $media-tablets) {
+    padding: 30px 25px 30px 25px;
+  }
+  @media (max-width: $media-phones) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    padding: 5px 15px 30px 15px;
+  }
+  @media (max-width: $media-small-phones) {
+    padding: 5px 30px 30px 30px;
   }
 }
 .person {
@@ -206,6 +253,13 @@
   @media (max-width: $media-laptops) {
     max-width: 700px;
   }
+
+  @media (max-width: $media-tablets) {
+    max-width: 350px;
+  }
+  @media (max-width: $media-phones) {
+    max-width: 260px;
+  }
 }
 
 /* стили для wrapper */
@@ -218,17 +272,27 @@
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
 .itcss__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 /* класс для отключения transition */
 .transition-none {
+  -webkit-transition: none;
+  -o-transition: none;
   transition: none;
 }
 
 /* стили для элементов */
 .itcss__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
   position: relative;
@@ -240,9 +304,15 @@
   top: 50%;
   width: 50px;
   height: 50px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   z-index: 500;
 }
@@ -282,11 +352,18 @@
   left: 0;
   right: 0;
   bottom: -48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0;
   margin: 0 15%;
   list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 

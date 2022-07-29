@@ -10,6 +10,9 @@
     @include crossBrowser(transition, all 0.4s ease);
 
     @media (max-width: $media-laptops) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       position: relative;
     }
@@ -26,6 +29,9 @@
 
     @media (max-width: $media-laptops) {
       margin-top: 70px;
+    }
+    @media (max-width: $media-tablets) {
+      margin-top: 120px;
     }
   }
   &__content {
@@ -48,9 +54,16 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(-50%);
+      @include crossBrowser(transform, translateX(-50%));
       width: 100%;
       text-align: center;
+    }
+
+    @media (max-width: $media-tablets) {
+      font-size: 36px;
+    }
+    @media (max-width: $media-phones) {
+      font-size: 32px;
     }
   }
   &__desk {

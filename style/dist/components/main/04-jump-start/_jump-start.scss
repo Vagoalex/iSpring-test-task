@@ -11,6 +11,19 @@
     background-color: $max-section-color;
 
     @include crossBrowser(transition, all 0.4s ease);
+
+    @media (max-width: $media-tablets) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: auto;
+      position: relative;
+    }
+  }
+
+  @media (max-width: $media-tablets) {
+    padding: 120px 0 0 0;
   }
 }
 
@@ -44,6 +57,12 @@
     @media (max-width: $media-laptops) {
       font-size: 40px;
     }
+    @media (max-width: $media-tablets) {
+      font-size: 34px;
+    }
+    @media (max-width: $media-phones) {
+      font-size: 31px;
+    }
   }
   &__desk {
     margin-top: 28px;
@@ -73,10 +92,28 @@
         @include crossBrowser(transform, translateY(5px));
       }
     }
+
+    @media (max-width: $media-tablets) {
+      margin: 0;
+      position: absolute;
+      bottom: 50px;
+    }
+    @media (max-width: $media-phones) {
+      left: 70px;
+    }
+    @media (max-width: $media-small-phones) {
+      left: 45px;
+    }
   }
 
   @media (max-width: $media-laptops) {
     padding: 105px 20px 105px 35px;
+  }
+  @media (max-width: $media-tablets) {
+    padding: 75px 20px 0px 35px;
+  }
+  @media (max-width: $media-small-phones) {
+    padding: 60px 15px 0px 15px;
   }
 }
 
@@ -103,6 +140,16 @@
 
   @media (max-width: $media-laptops) {
     padding: 70px 35px 50px 10px;
+  }
+  @media (max-width: $media-tablets) {
+    padding: 70px 35px 50px 25px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: $media-phones) {
+    margin-bottom: 82px;
+  }
+  @media (max-width: $media-small-phones) {
+    padding: 70px 15px 50px 15px;
   }
 }
 .start-card {
@@ -230,6 +277,9 @@
     @media (max-width: $media-laptops) {
       font-size: 20px;
     }
+    @media (max-width: $media-phones) {
+      font-size: 17px;
+    }
   }
   &__desk {
     margin-top: 12px;
@@ -274,5 +324,8 @@
     @media (max-width: $media-laptops) {
       font-size: 14px;
     }
+  }
+  @media (max-width: $media-small-phones) {
+    padding: 16px 0px 18px 12px;
   }
 }

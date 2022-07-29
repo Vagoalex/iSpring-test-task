@@ -21,6 +21,12 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
 
+    -webkit-box-align: center;
+
+    -ms-flex-align: center;
+
+    align-items: center;
+
     @include crossBrowser(transition, all 0.4s ease);
 
     @media (max-width: $media-laptops) {
@@ -33,12 +39,47 @@
       justify-content: center;
       height: 84px;
     }
+
+    @media (max-width: $media-tablets) {
+      width: 100%;
+      margin: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
   }
 
   &__logo {
-    margin-right: 26px;
+    -webkit-box-flex: 17.5%;
+    -ms-flex: 17.5%;
+    flex: 17.5%;
+
+    @include crossBrowser(transition, all 0.8s ease);
+
+    position: relative;
+    left: 0;
+
+    &--img {
+      width: 120.84px;
+      height: 27.4px;
+    }
+
     @media (max-width: $media-laptops) {
-      margin-right: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    @media (max-width: $media-tablets) {
+      left: 30px;
     }
   }
 
@@ -47,9 +88,13 @@
     display: -ms-flexbox;
     display: flex;
 
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    width: 100%;
+
+    -webkit-box-pack: justify;
+
+    -ms-flex-pack: justify;
+
+    justify-content: space-between;
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -63,6 +108,17 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+    }
+
+    @media (max-width: $media-tablets) {
+      position: fixed;
+      background: #ffe4bb;
+      margin-top: 257px;
+      width: 280px;
+      height: 2000px;
+      right: -400px;
+      @include crossBrowser(transition, all 0.8s ease);
+      z-index: 10;
     }
   }
 
@@ -94,6 +150,24 @@
         color: $addition-color;
       }
     }
+
+    @media (max-width: $media-tablets) {
+      font-size: 20px;
+      height: 185px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      position: relative;
+      left: -48px;
+    }
   }
 
   &__select-label {
@@ -108,6 +182,17 @@
     @include crossBrowser(transition, all 0.4s ease);
     &:hover {
       color: $addition-color;
+    }
+
+    option {
+      @media (max-width: $media-tablets) {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: $media-tablets) {
+      position: relative;
+      left: -3px;
     }
   }
 }
@@ -183,4 +268,84 @@
     -ms-flex-pack: center;
     justify-content: center;
   }
+
+  @media (max-width: $media-tablets) {
+    font-size: 20px;
+    position: relative;
+    left: -24px;
+  }
+}
+
+.header__burger {
+  display: none;
+
+  @include crossBrowser(transition, all 0.4s ease);
+
+  @media (max-width: $media-tablets) {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    right: 30px;
+    top: 32px;
+    z-index: 100;
+  }
+
+  .burger-line {
+    @media (max-width: $media-laptops) {
+      width: 30px;
+      height: 2px;
+      background: $main-color;
+    }
+  }
+  .line-second {
+    @media (max-width: $media-laptops) {
+      margin-top: 8px;
+    }
+  }
+  .line-third {
+    @media (max-width: $media-laptops) {
+      margin-top: 8px;
+    }
+  }
+}
+.burger-logo {
+  display: none;
+  &__img {
+  }
+
+  @media (max-width: $media-tablets) {
+    display: block;
+    padding-right: 108px;
+    padding-bottom: 25px;
+  }
+}
+
+.fog {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  width: 100%;
+  height: 120vh;
+  background-color: rgba(41, 41, 41, 0.6);
+}
+.fog--active {
+  display: block;
+}
+
+.burger-body--lock {
+  overflow: hidden;
+}
+
+.header__logo--none {
+  position: relative;
+  left: -150%;
+  z-index: 5;
+}
+
+.header__links--active {
+  right: 0;
+  z-index: 10;
 }

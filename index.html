@@ -21,14 +21,28 @@
   </head>
   <body>
     <header class="header">
+      <div class="fog"></div>
       <div class="header__container wrapper-min">
+        <div class="logo header__logo">
+          <a href="https://www.ispring.ru/" target="_blank" rel="noopener">
+            <img
+              src="assets/icons/iSpring-logo.png"
+              alt="iSpring logo"
+              class="logo__img header__logo--img"
+          /></a>
+        </div>
+        <div class="header__burger">
+          <div class="burger-line line-first"></div>
+          <div class="burger-line line-second"></div>
+          <div class="burger-line line-third"></div>
+        </div>
         <div class="header__links">
-          <div class="logo header__logo">
+          <div class="logo burger-logo">
             <a href="https://www.ispring.ru/" target="_blank" rel="noopener">
               <img
                 src="assets/icons/iSpring-logo.png"
                 alt="iSpring logo"
-                class="logo__img"
+                class="logo__img burger-logo__img"
             /></a>
           </div>
 
@@ -100,36 +114,36 @@
               </li>
             </ul>
           </nav>
-        </div>
 
-        <div class="header__options header-options">
-          <label for="options" class="options-wrapper">
-            <select
-              id="lang-select"
-              class="options-select"
-              name="products"
-              id="options"
-            >
-              <option value="default" selected>
-                <a href="/" class="options-select__link">en</a>
-              </option>
-              <option value="product-1">
-                <a href="/" class="options-select__link">ru</a>
-              </option>
-            </select>
-          </label>
-          <div id="basket" class="header-options__basket options-wrapper">
-            <img
-              src="assets/icons/header/salary-basket.svg"
-              alt="salary basket"
-            />
+          <div class="header-options">
+            <label for="options" class="options-wrapper">
+              <select
+                id="lang-select"
+                class="options-select"
+                name="products"
+                id="options"
+              >
+                <option value="default" selected>
+                  <a href="/" class="options-select__link">en</a>
+                </option>
+                <option value="product-1">
+                  <a href="/" class="options-select__link">ru</a>
+                </option>
+              </select>
+            </label>
+            <div id="basket" class="header-options__basket options-wrapper">
+              <img
+                src="assets/icons/header/salary-basket.svg"
+                alt="salary basket"
+              />
+            </div>
+            <div id="search" class="header-options__search options-wrapper">
+              <img src="assets/icons/header/search.svg" alt="search" />
+            </div>
+            <button id="log-in" class="header-options__log-in options-wrapper">
+              Log in
+            </button>
           </div>
-          <div id="search" class="header-options__search options-wrapper">
-            <img src="assets/icons/header/search.svg" alt="search" />
-          </div>
-          <button id="log-in" class="header-options__log-in options-wrapper">
-            Log in
-          </button>
         </div>
       </div>
     </header>
@@ -968,7 +982,7 @@
       </div>
     </footer>
 
-    <script defer src="js/simple-adaptive-slider.js"></script>
+    <script defer src="js/components/simple-adaptive-slider.js"></script>
     <script type="module" src="js/app.js"></script>
   </body>
 </html>

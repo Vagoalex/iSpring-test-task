@@ -40,6 +40,12 @@
         @media (max-width: $media-laptops) {
           font-size: 32px;
         }
+        @media (max-width: $media-laptops) {
+          font-size: 33px;
+        }
+        @media (max-width: $media-small-phones) {
+          font-size: 30px;
+        }
       }
       &__desk {
         max-width: 445px;
@@ -51,6 +57,12 @@
         @media (max-width: $media-laptops) {
           font-size: 19px;
           max-width: 260px;
+        }
+        @media (max-width: $media-tablets) {
+          margin-bottom: 10px;
+        }
+        @media (max-width: $media-small-phones) {
+          font-size: 15px;
         }
       }
       &__link {
@@ -73,9 +85,17 @@
           box-shadow: 0px 9px 13px rgb(22 25 32 / 65%);
           @include crossBrowser(transform, translateY(5px));
         }
+        @media (max-width: $media-tablets) {
+          position: absolute;
+          bottom: 35px;
+        }
       }
       @media (max-width: $media-laptops) {
         padding: 43px 0px 35px 42px;
+      }
+
+      @media (max-width: $media-tablets) {
+        padding: 30px 35px 30px 40px;
       }
     }
     .hero-background {
@@ -121,10 +141,26 @@
       @media (max-width: $media-laptops) {
         left: 32px;
       }
+      @media (max-width: $media-tablets) {
+        margin-bottom: 130px;
+      }
     }
 
     @media (max-width: $media-laptops) {
       height: 450px;
     }
+
+    @media (max-width: $media-tablets) {
+      height: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: relative;
+    }
+  }
+
+  @media (max-width: $media-phones) {
+    padding: 100px 0 0 0;
   }
 }
