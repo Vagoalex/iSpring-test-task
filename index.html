@@ -885,8 +885,8 @@
                     name="partner-form-name"
                     type="text"
                     placeholder="Company name *"
-                    required
                   />
+                  <div class="form-error-message"></div>
                 </label>
 
                 <label htmlFor="partner-form-phone">
@@ -894,10 +894,10 @@
                     class="form__input partner-form-field"
                     id="partner-form-phone"
                     name="partner-form-phone"
-                    type="number"
+                    type="text"
                     placeholder="Phone *"
-                    required
                   />
+                  <div class="form-error-message"></div>
                 </label>
 
                 <label htmlFor="partner-form-email">
@@ -907,8 +907,8 @@
                     name="partner-form-email"
                     type="email"
                     placeholder="Email *"
-                    required
                   />
+                  <div class="form-error-message"></div>
                 </label>
 
                 <label htmlFor="partner-form-text">
@@ -917,8 +917,8 @@
                     id="partner-form-text"
                     name="partner-form-text"
                     placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner) *"
-                    required
                   ></textarea>
+                  <div class="form-error-message"></div>
                 </label>
 
                 <p class="form__info">
@@ -965,11 +965,11 @@
             By clicking “Subscribe”, you agree to our Privacy Policy. All emails
             include an unsubscribe link, so you can opt-out at any time.
           </p>
-          <form class="subscribe-form" action="/">
-            <label for="subscribe-form">
+          <form id="subscribe-form" class="subscribe-form" action="/">
+            <label htmlFor="subscribe-form-input">
               <input
                 class="subscribe-form__input"
-                id="subscribe-form"
+                id="subscribe-form-input"
                 type="email"
                 placeholder="Email"
               />

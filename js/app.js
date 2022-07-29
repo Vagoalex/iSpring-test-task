@@ -1,10 +1,11 @@
 import burgerMenu from './components/burger.js';
 import validateForm from './components/validateForm.js';
-import UI from './components/UI/UI.js';
+import subscribeForm from './components/subscribeForm.js';
 
 window.addEventListener('DOMContentLoaded', function () {
   burgerMenu();
-  validateForm(UI.fields, UI.btn);
+  validateForm();
+  subscribeForm();
 
   new ItcSimpleSlider('.itcss', {
     loop: true,

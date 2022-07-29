@@ -7,6 +7,10 @@ const UI = {
   form: document.querySelector('#partner-form'),
   fields: document.querySelectorAll('.partner-form-field'),
   btn: document.querySelector('#partner-form-btn'),
+
+  subscribeForm: document.querySelector('#subscribe-form'),
+  subscribeInput: document.querySelector('#subscribe-form-input'),
+  subscribeBtn: document.querySelector('#subscribe-form-btn'),
 };
 
 export default UI;

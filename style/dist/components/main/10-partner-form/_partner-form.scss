@@ -257,12 +257,15 @@
   }
   @media (max-width: $media-tablets) {
     padding: 35px 15px 35px 15px;
-    max-width: 315px;
+    max-width: 380px;
   }
   @media (max-width: $media-phones) {
     padding: 35px 15px 35px 15px;
-    max-width: 275px;
+    max-width: 315px;
     height: auto;
+  }
+  @media (max-width: $media-small-phones) {
+    max-width: 275px;
   }
 }
 
@@ -292,20 +295,7 @@
   }
 }
 
-.btn-invalid {
-  @include crossBrowser(transition, all 0.5s ease);
-  background-color: rgb(136, 136, 136);
-  color: #000;
-
-  &:hover {
-    background-color: rgb(136, 136, 136);
-    color: #000;
-    box-shadow: none;
-  }
-  &:active {
-    background-color: rgb(136, 136, 136);
-    color: #000;
-    box-shadow: none;
-    @include crossBrowser(transform, translateY(0));
-  }
+.button-error {
+  background-color: red !important;
+  color: #fff;
 }

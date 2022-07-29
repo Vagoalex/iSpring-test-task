@@ -2700,14 +2700,19 @@ footer {
 @media (max-width: 768px) {
   .form {
     padding: 35px 15px 35px 15px;
-    max-width: 315px;
+    max-width: 380px;
   }
 }
 @media (max-width: 420px) {
   .form {
     padding: 35px 15px 35px 15px;
-    max-width: 275px;
+    max-width: 315px;
     height: auto;
+  }
+}
+@media (max-width: 350px) {
+  .form {
+    max-width: 275px;
   }
 }
 
@@ -2743,21 +2748,9 @@ footer {
   border-radius: 4px;
 }
 
-.btn-invalid {
-  transition: all 0.5s ease;
-  background-color: rgb(136, 136, 136);
-  color: #000;
-}
-.btn-invalid:hover {
-  background-color: rgb(136, 136, 136);
-  color: #000;
-  box-shadow: none;
-}
-.btn-invalid:active {
-  background-color: rgb(136, 136, 136);
-  color: #000;
-  box-shadow: none;
-  transform: translateY(0);
+.button-error {
+  background-color: red !important;
+  color: #fff;
 }
 
 .footer {
@@ -2906,6 +2899,11 @@ footer {
     max-width: 365px;
     flex-direction: column;
   }
+}
+
+.button-error {
+  background-color: red !important;
+  color: #fff !important;
 }
 
 /*
