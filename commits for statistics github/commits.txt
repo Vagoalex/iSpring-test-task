@@ -9,3 +9,4 @@
 28.07.2022 0:19 // completed: completed desktop layout. ToDo: hovers, actives, crossbrowsers, adaptive, logic in forms, burger menu and modal window. php server and postgreSQL
 28.07.2022 14:04 // feat: completed hovers actives and crossbrowsers elements
 28.07.2022 18:47 // feat: completed adaptive for small desktops, refactored slider for adaptive
+29.07.2022 13:12 // feat: adaptive completed
