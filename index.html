@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Test task for cool company - iSpring" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      rel="icon"
+      href="https://s3-eu-west-1.amazonaws.com/tpd/logos/5c142d316acde7000130f7ff/0x0.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>iSpring test task two</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container wrapper-min">
+        <div class="logo header__logo">
+          <a href="https://www.ispring.ru/" target="_blank" rel="noopener">
+            <img
+              src="assets/icons/iSpring.png"
+              alt="iSpring logo"
+              class="logo__img header__logo--img"
+            />
+          </a>
+        </div>
+        <a
+          href="https://github.com/Vagoalex/iSpring-test-task/tree/oop-calculator-project"
+          target="_blank"
+          rel="noopener"
+          class="header__link"
+          >Git repo
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container wrapper-max">
+          <h1 class="hero__title">Здесь короче будет крутой калькулятор</h1>
+          <div class="commands-container">
+            <div class="commands">
+              <h4 class="commands__title">
+                Список команд для использования калькулятора, осторожно, много
+                букв!:
+              </h4>
+              <div class="commands-info comands-info--acitve">
+                <div class="commands-info__images">
+                  <img
+                    class="commands-info__image"
+                    src="assets/images/commands-1-min.jpg"
+                    alt="first image for commands"
+                    height="100"
+                    loading="lazy"
+                  />
+                  <img
+                    class="commands-info__image"
+                    src="assets/images/commands-2-min.jpg"
+                    alt="second image for commands"
+                    height="100"
+                    loading="lazy"
+                  />
+                  <img
+                    class="commands-info__image"
+                    src="assets/images/commands-3-min.jpg"
+                    alt="third image for commands"
+                    height="100"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="commands-info-item">
+                  <h5 class="commands-info-item__title">
+                    var < идентификатор >
+                  </h5>
+                  <p class="commands-info-item__desk">
+                    Объявляет переменную типа double с именем
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор ></span
+                    >. Идентификатор не должен совпадать ни с одним из ранее
+                    объявленных имен переменных и функций.
+                  </p>
+                </div>
+                <div class="commands-info-item">
+                  <h5 class="commands-info-item__title">
+                    let < идентификатор1 > = < число с плавающей запятой > либо
+                    let < идентификатор1 > = < идентификатор2 >
+                  </h5>
+                  <p class="commands-info-item__desk">
+                    Присваивает переменной с именем
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор1 ></span
+                    >
+                    числовое значение, либо текущее значение ранее объявленного
+                    идентификатора с именем
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор2 ></span
+                    >. Если переменная с именем
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор1 ></span
+                    >
+                    не была ранее объявлена, происходит объявление новой
+                    переменной. В качестве
+                    <span class="commands-info-item__identificator"
+                      >< идентификатора1 ></span
+                    >
+                    не может выступать имя функции.
+                  </p>
+                </div>
+                <div class="commands-info-item">
+                  <h5 class="commands-info-item__title">
+                    fn < идентификатор1 > = < идентификатор2 > либо fn <
+                    идентификатор1 > = < идентификатор2 > < операция > <
+                    идентификатор3 >
+                  </h5>
+                  <div class="commands-info-item__desk">
+                    Объявляет новую функцию с ранее необъявленным именем
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор1 ></span
+                    >, значением которой будет либо значение идентификатора
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор2 ></span
+                    >, либо результат применения одной из следующих бинарных
+                    операций к значениям ранее объявленных идентификаторов
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор2 ></span
+                    >
+                    и
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор3 ></span
+                    >
+                    в момент вычисления значения функции:
+                    <ul>
+                      <li>
+                        <span class="commands-info-item__identificator"
+                          >+ Сложение
+                        </span>
+                      </li>
+                      <li>
+                        <span class="commands-info-item__identificator"
+                          >- Вычитание
+                        </span>
+                      </li>
+                      <li>
+                        <span class="commands-info-item__identificator"
+                          >* Умножение
+                        </span>
+                      </li>
+                      <li>
+                        <span class="commands-info-item__identificator"
+                          >/ Деление
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="commands-info-item">
+                  <h5 class="commands-info-item__title">
+                    print < идентификатор >
+                  </h5>
+                  <p class="commands-info-item__desk">
+                    Выводит в stdout значение ранее объявленного идентификатора.
+                    Если идентификатором являлась переменная, то выводится ее
+                    значение, а если функция, то выводится вычисленное значение
+                    функции.
+                  </p>
+                </div>
+                <div class="commands-info-item">
+                  <h5 class="commands-info-item__title">printfns</h5>
+                  <p class="commands-info-item__desk">
+                    Выводит в stdout имена и значения всех ранее объявленных
+                    функций, отсортированных по алфавиту, по одному в каждой
+                    строке в следующем формате: < идентификатор > : < значение >
+                  </p>
+                </div>
+                <div class="commands-info-item">
+                  <h5 class="commands-info-item__title">
+                    var
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор ></span
+                    >
+                  </h5>
+                  <p class="commands-info-item__desk">
+                    Объявляет переменную типа double с именем
+                    <span class="commands-info-item__identificator"
+                      >< идентификатор ></span
+                    >. Идентификатор не должен совпадать ни с одним из ранее
+                    объявленных имен переменных и функций. Значение переменной
+                    после ее объявления не определено (можно использовать
+                    значение NAN (not a number) для этих целей). В отсутствие
+                    ошибок в stdout ничего не выводится. При наличии ошибки
+                    команда игнорируется, а в stdout выводится сообщение об
+                    ошибке.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button>Тыкни сюда, чтобы узнать команды :)</button>
+          </div>
+        </div>
+      </section>
+      <section class="calc">
+        <div class="calc__container wrapper-max">
+          <h2 class="calc__title">
+            Испытай на себе мощь данного калькулятора, сделанного на ООП!
+          </h2>
+          <div class="calc-form-containter">
+            <form id="calc-form" class="calc-form">
+              <h3 class="calc-form__title">Тут вводи команды</h3>
+              <label for="calc-input">
+                <input id="calc-input" class="calc-form__input" type="text" />
+              </label>
+              <button id="calc-btn" class="calc-form__button">
+                Отправить!
+              </button>
+            </form>
+          </div>
+          <div class="calc-view">
+            <div class="calc-view__input view-input">
+              <h3 class="view-input__title">Это поле введенных команд</h3>
+              <div class="view-input__container">
+                <ul class="view-input-list">
+                  <li class="view-input-list__item">Команда Ух</li>
+                  <li class="view-input-list__item">Команда Вжух</li>
+                  <li class="view-input-list__item">Команда Пух</li>
+                  <li class="view-input-list__item">Команда Хухух</li>
+                  <li class="view-input-list__item">Команда Мух</li>
+                  <li class="view-input-list__item">Команда Прух</li>
+                  <li class="view-input-list__item">Команда Паук</li>
+                  <li class="view-input-list__item">Команда Лук</li>
+                  <li class="view-input-list__item">Команда Луг</li>
+                  <li class="view-input-list__item">Команда Дуб</li>
+                </ul>
+              </div>
+            </div>
+            <div class="calc-view__output view-output">
+              <h3 class="view-output__title">
+                Это поле результата последней введенной команды
+              </h3>
+              <div class="view-output__container">NaN</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer__container wrapper-min">
+        <div class="footer-copyright">
+          <div class="footer-copyright__logo logo">
+            <a href="https://www.ispring.ru/" target="_blank" rel="noopener">
+              <img
+                src="assets/icons/iSpring.png"
+                alt="iSpring logo"
+                class="logo__img"
+            /></a>
+          </div>
+          <p class="footer-copyright__text">
+            © 2001-2020 iSpring Solutions Inc. All rights reserved. Terms of Use
+            | Privacy Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="js/components/simple-adaptive-slider.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

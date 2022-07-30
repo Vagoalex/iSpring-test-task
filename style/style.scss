@@ -1,0 +1,12 @@
+@import './options/reset';
+@import './options/normalize';
+
+@import './options/fonts';
+
+@import './options/variables';
+@import './options/mixins';
+
+@import './dist/global';
+@import './dist/components/header/header';
+@import './dist/components/main/main';
+@import './dist/components/footer/footer';
