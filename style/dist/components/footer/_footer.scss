@@ -77,6 +77,10 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 
+  label {
+    position: relative;
+  }
+
   &__input {
     height: 38px;
     width: 303px;

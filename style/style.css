@@ -2221,6 +2221,16 @@ footer {
   background-color: rgb(136, 136, 136);
   box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.55);
 }
+@media (max-width: 420px) {
+  .slider-buttons .slider-btn:hover {
+    background-color: #fff;
+    box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
+  }
+  .slider-buttons .slider-btn:active {
+    background-color: #fff;
+    box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
+  }
+}
 
 .slide {
   height: 352px;
@@ -2262,21 +2272,21 @@ footer {
   position: absolute;
   top: 15%;
   left: 15%;
-  background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png");
+  background-image: url("../../../../../assets/icons/benefits-slider/slider-design.png");
   width: 123px;
   height: 87px;
   z-index: -1;
 }
 @media (max-width: 1300px) {
   .slide-introduction {
-    padding: 70px 10px 40px 40px;
+    padding: 70px 35px 10px 35px;
   }
   .slide-introduction::before {
     content: "";
     position: absolute;
     top: 10%;
     left: 5%;
-    background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png");
+    background-image: url("../../../../../assets/icons/benefits-slider/slider-design.png");
     width: 123px;
     height: 87px;
     z-index: -1;
@@ -2285,12 +2295,12 @@ footer {
 @media (max-width: 420px) {
   .slide-introduction {
     flex: 0;
-    padding: 70px 15px 40px 15px;
+    padding: 70px 35px 10px 35px;
   }
 }
 @media (max-width: 350px) {
   .slide-introduction {
-    padding: 70px 25px 40px 25px;
+    padding: 70px 25px 10px 25px;
   }
 }
 
@@ -2304,18 +2314,19 @@ footer {
 }
 @media (max-width: 1300px) {
   .slide-content {
-    padding: 75px 25px 30px 25px;
+    padding: 75px 35px 30px 35px;
   }
 }
 @media (max-width: 768px) {
   .slide-content {
-    padding: 30px 25px 30px 25px;
+    padding: 30px 35px 30px 35px;
   }
 }
 @media (max-width: 420px) {
   .slide-content {
     flex: 0;
-    padding: 5px 15px 30px 15px;
+    padding: 5px 35px 30px 35px;
+    text-align: justify;
   }
 }
 @media (max-width: 350px) {
@@ -2370,7 +2381,12 @@ footer {
 }
 @media (max-width: 420px) {
   .itcss {
-    max-width: 260px;
+    max-width: 295px;
+  }
+}
+@media (max-width: 350px) {
+  .itcss {
+    max-width: 270px;
   }
 }
 
@@ -2410,7 +2426,7 @@ footer {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 500;
+  z-index: 97;
 }
 
 .itcss__control_prev {
@@ -2420,7 +2436,7 @@ footer {
   content: "";
   position: relative;
   z-index: 10;
-  background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-left.svg");
+  background-image: url("../../../../../assets/icons/benefits-slider/slider-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 50px;
@@ -2434,7 +2450,7 @@ footer {
   content: "";
   position: relative;
   z-index: 1000;
-  background-image: url("../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-right.svg");
+  background-image: url("../../../../../assets/icons/benefits-slider/slider-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 50px;
@@ -2816,6 +2832,9 @@ footer {
 .subscribe-form {
   display: flex;
   justify-content: space-between;
+}
+.subscribe-form label {
+  position: relative;
 }
 .subscribe-form__input {
   height: 38px;

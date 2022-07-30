@@ -1,4 +1,5 @@
 import UI from './UI/UI.js';
+import validate from './validateCustomFunction.js';
 
 // 2.	Разработайте скрипт на PHP, предоставляющий возможность просмотреть запросы, отправленные из формы “Напишите мне”. Скрипт должен на вход получать параметр email и выводить данные соответствующего пользователя в виде аккуратно оформленной таблицы на страницу. В случае, если данные отсутствуют, необходимо показывать сообщение об ошибке.
 
@@ -10,6 +11,10 @@ function subscribeForm() {
   let countSubscribers = 1;
   let isSubmit = false;
   const subscribers = [];
+
+  subscribeInput.addEventListener('blur', () => {
+    validate(subscribeInput, 'subscribe-form');
+  });
 
   const submit = (value) => {
     alert('Данные отправлены');

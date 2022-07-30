@@ -101,6 +101,21 @@
       -webkit-box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.55);
       box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.55);
     }
+
+    @media (max-width: $media-phones) {
+      &:hover {
+        background-color: $alternate-text;
+
+        -webkit-box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
+        box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
+      }
+      &:active {
+        background-color: $alternate-text;
+
+        -webkit-box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
+        box-shadow: 0px 9px 23px rgba(22, 25, 32, 0.15);
+      }
+    }
   }
 }
 
@@ -152,23 +167,23 @@
     position: absolute;
     top: 15%;
     left: 15%;
-    // background-image: url('../../../../../assets/icons/benefits-slider/slider-design.png');
-    background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png');
+    background-image: url('../../../../../assets/icons/benefits-slider/slider-design.png');
+    // background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png');
     width: 123px;
     height: 87px;
     z-index: -1;
   }
 
   @media (max-width: $media-laptops) {
-    padding: 70px 10px 40px 40px;
+    padding: 70px 35px 10px 35px;
 
     &::before {
       content: '';
       position: absolute;
       top: 10%;
       left: 5%;
-      // background-image: url('../../../../../assets/icons/benefits-slider/slider-design.png');
-      background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png');
+      background-image: url('../../../../../assets/icons/benefits-slider/slider-design.png');
+      // background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-design.png');
       width: 123px;
       height: 87px;
       z-index: -1;
@@ -179,10 +194,10 @@
     -webkit-box-flex: 0;
     -ms-flex: 0;
     flex: 0;
-    padding: 70px 15px 40px 15px;
+    padding: 70px 35px 10px 35px;
   }
   @media (max-width: $media-small-phones) {
-    padding: 70px 25px 40px 25px;
+    padding: 70px 25px 10px 25px;
   }
 }
 .slide-content {
@@ -198,16 +213,17 @@
   }
 
   @media (max-width: $media-laptops) {
-    padding: 75px 25px 30px 25px;
+    padding: 75px 35px 30px 35px;
   }
   @media (max-width: $media-tablets) {
-    padding: 30px 25px 30px 25px;
+    padding: 30px 35px 30px 35px;
   }
   @media (max-width: $media-phones) {
     -webkit-box-flex: 0;
     -ms-flex: 0;
     flex: 0;
-    padding: 5px 15px 30px 15px;
+    padding: 5px 35px 30px 35px;
+    text-align: justify;
   }
   @media (max-width: $media-small-phones) {
     padding: 5px 30px 30px 30px;
@@ -260,7 +276,10 @@
     max-width: 350px;
   }
   @media (max-width: $media-phones) {
-    max-width: 260px;
+    max-width: 295px;
+  }
+  @media (max-width: $media-small-phones) {
+    max-width: 270px;
   }
 }
 
@@ -316,7 +335,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  z-index: 500;
+  z-index: 97;
 }
 
 .itcss__control_prev {
@@ -326,8 +345,8 @@
 
     position: relative;
     z-index: 10;
-    // background-image: url('../../../../../assets/icons/benefits-slider/slider-left.svg');
-    background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-left.svg');
+    background-image: url('../../../../../assets/icons/benefits-slider/slider-left.svg');
+    // background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-left.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
@@ -341,8 +360,8 @@
     content: '';
     position: relative;
     z-index: 1000;
-    // background-image: url('../../../../../assets/icons/benefits-slider/slider-right.svg');
-    background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-right.svg');
+    background-image: url('../../../../../assets/icons/benefits-slider/slider-right.svg');
+    // background-image: url('../../../../../iSpring-test-task/assets/icons/benefits-slider/slider-right.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
