@@ -1,4 +1,5 @@
 import UI from './UI/UI.js';
+import { request } from './request.js';
 const validateForm = () => {
   //   получаем элементы со страницы
   const { form, fields, btn } = UI;
@@ -29,6 +30,9 @@ const validateForm = () => {
         default:
           throw new Error('Invalid name');
       }
+
+      // request(JSON.stringify(submitData), 'http://localhost:3000/companies');
+      // заливаю на deploy без отправки данных на сервер, т.к. не до конца настроил отправку и возиться долго
 
       elem.value = '';
     });
@@ -79,7 +83,7 @@ const validateForm = () => {
     });
   });
 
-  form.addEventListener('submit', function (event) {
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
     // проверка на заполнение полей
 

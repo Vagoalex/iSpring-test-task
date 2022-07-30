@@ -15,10 +15,15 @@ function burgerMenu() {
   if (UI.exitMenu) {
     const menuBody = document.querySelector('.header__links');
     UI.exitMenu.addEventListener('click', (e) => {
-      if (e.target.tagName === 'SELECT') {
+      if (e.target.value === '/') {
         return;
       }
-
+      if (e.target.value.includes('#')) {
+        e.target.selectedIndex = 0;
+      }
+      if (e.target.value === 'en' || e.target.value === 'ru') {
+        return;
+      }
       document.body.classList.remove('burger-body--lock');
       UI.burgerMenu.classList.remove('header__burger--active');
       menuBody.classList.remove('header__links--active');
