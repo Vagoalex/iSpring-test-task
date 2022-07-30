@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Test task for cool company - iSpring" />
@@ -66,7 +66,7 @@
                     <option value="#product-languages">Langs</option>
                     <option value="#questions">Question</option>
                     <option value="#benefits-slider">Feedback</option>
-                    <option value="#partner-form">Form</option>
+                    <option value="#partner-form-section">Form</option>
                     <option value="#footer">Contacts</option>
                   </select>
                 </label>
@@ -116,12 +116,12 @@
           </nav>
 
           <div class="header-options">
-            <label for="options" class="options-wrapper">
+            <label for="options-select" class="options-wrapper">
               <select
                 id="lang-select"
                 class="options-select"
-                name="products"
-                id="options"
+                name="options-select"
+                id="options-select"
               >
                 <option value="en" selected>
                   <a href="/" class="options-select__link">en</a>
@@ -643,8 +643,8 @@
                 class="questions-introduction__icon--image"
                 src="assets/icons/questions/questions-hands.svg"
                 alt="questions logo"
-                height="60px"
-                width="60px"
+                height="60"
+                width="60"
                 loading="lazy"
               />
             </div>
@@ -863,7 +863,7 @@
         </div>
       </section>
 
-      <section id="partner-form" class="partner-form">
+      <section id="partner-form-section" class="partner-form">
         <div class="partner-form__wrapper">
           <div class="partner-form__container wrapper-min">
             <div class="form-introduction">
@@ -878,7 +878,7 @@
             <div class="form-wrap">
               <form id="partner-form" class="form">
                 <h2 class="form__title">Company Information</h2>
-                <label htmlFor="partner-form-name">
+                <label for="partner-form-name">
                   <input
                     class="form__input partner-form-field"
                     id="partner-form-name"
@@ -889,7 +889,7 @@
                   <div class="form-error-message"></div>
                 </label>
 
-                <label htmlFor="partner-form-phone">
+                <label for="partner-form-phone">
                   <input
                     class="form__input partner-form-field"
                     id="partner-form-phone"
@@ -900,7 +900,7 @@
                   <div class="form-error-message"></div>
                 </label>
 
-                <label htmlFor="partner-form-email">
+                <label for="partner-form-email">
                   <input
                     class="form__input partner-form-field"
                     id="partner-form-email"
@@ -911,7 +911,7 @@
                   <div class="form-error-message"></div>
                 </label>
 
-                <label htmlFor="partner-form-text">
+                <label for="partner-form-text">
                   <textarea
                     class="form__input form__textarea partner-form-field"
                     id="partner-form-text"
@@ -966,7 +966,7 @@
             include an unsubscribe link, so you can opt-out at any time.
           </p>
           <form id="subscribe-form" class="subscribe-form" action="/">
-            <label htmlFor="subscribe-form-input">
+            <label for="subscribe-form-input">
               <input
                 class="subscribe-form__input"
                 id="subscribe-form-input"
