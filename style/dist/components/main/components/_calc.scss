@@ -1,7 +1,19 @@
 .calc {
+  margin-top: 30px;
+  margin: 30px 0px;
+
   &__container {
+    border: 1px solid transparent;
+    background-color: #156b15;
+    color: #000;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
   }
   &__title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
   }
 }
 
@@ -9,22 +21,75 @@
 }
 .calc-form {
   &__title {
-    &__input {
+    font-weight: 700;
+  }
+  &__wrap {
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  label {
+    width: 300px;
+  }
+  &__input {
+    width: 100%;
+    background-color: $button-color;
+    color: $main-color;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 2px 5px;
+    border: 1px solid rgb(255, 255, 255);
+
+    &::placeholder {
+      color: $main-color;
     }
-    &__button {
+  }
+  &__button {
+    background-color: $button-color;
+    color: $main-color;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-left: 20px;
+
+    &:hover {
+      background-color: $button-color-hover;
+      color: $main-color-hover;
+    }
+    &:active {
+      background-color: $button-color-active;
+      color: $main-color-active;
     }
   }
 }
 .calc-view {
+  margin-top: 20px;
+  display: flex;
+
   &__input {
+    flex: 50%;
+    border: 1px solid #000;
+    background-color: #000;
+    color: $main-color;
   }
   &__output {
+    flex: 50%;
+    border: 1px solid #000;
+    background-color: #000;
+    color: $main-color;
   }
 }
 .view-input {
   &__title {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
   }
   &__container {
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    overflow-y: scroll;
+    height: 322px;
   }
 }
 .view-input-list {
@@ -34,7 +99,13 @@
 
 .view-output {
   &__title {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
   }
   &__container {
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 322px;
   }
 }

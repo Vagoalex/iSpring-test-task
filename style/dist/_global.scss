@@ -38,8 +38,8 @@ footer {
 
 .custom-button {
   display: inline-block;
-  padding: 18px 37px;
-  border-radius: 100px;
+  padding: 4px 25px;
+  border-radius: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -47,30 +47,11 @@ footer {
 
   @media (max-width: $media-phones) {
     font-size: 15px;
-    padding: 15px 31px;
+    padding: 4px 18px;
   }
 }
 
-.wrapper-max {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @media (max-width: $media-laptops) {
-    max-width: 700px;
-  }
-
-  @media (max-width: $media-tablets) {
-    max-width: 365px;
-  }
-
-  @media (max-width: $media-phones) {
-    max-width: 330px;
-  }
-  @media (max-width: $media-small-phones) {
-    max-width: 290px;
-  }
-}
-.wrapper-min {
+.wrapper {
   max-width: 1000px;
   margin: 0 auto;
 
